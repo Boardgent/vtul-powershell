@@ -10,12 +10,50 @@
     </Property>
     <Property name="Name">MainForm</Property>
     <Property name="StartPosition">CenterScreen</Property>
-    <Property name="Text">vTul</Property>
+    <Property name="Text">vTul - by Tulpep</Property>
     <Property name="WindowState">Maximized</Property>
     <Event name="Load">OnLoadFormEvent</Event>
+    <Object type="System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="picturebox2" children="Controls">
+      <Property name="Anchor">Top, Right</Property>
+      <Property name="BackColor">1, 92, 163</Property>
+      <Property name="Location">666, 159</Property>
+      <Property name="Name">picturebox2</Property>
+      <Property name="Size">24, 24</Property>
+      <Property name="TabIndex">11</Property>
+      <Property name="TabStop">False</Property>
+    </Object>
+    <Object type="System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="picturebox1" children="Controls">
+      <Property name="Anchor">Top, Right</Property>
+      <Property name="BackColor">170, 0, 120</Property>
+      <Property name="Location">666, 129</Property>
+      <Property name="Name">picturebox1</Property>
+      <Property name="Size">24, 24</Property>
+      <Property name="TabIndex">10</Property>
+      <Property name="TabStop">False</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="labelRequiresIntelVPro" children="Controls">
+      <Property name="Anchor">Top, Right</Property>
+      <Property name="Font">Calibri, 12pt, style=Bold</Property>
+      <Property name="Location">689, 160</Property>
+      <Property name="Name">labelRequiresIntelVPro</Property>
+      <Property name="Size">142, 23</Property>
+      <Property name="TabIndex">14</Property>
+      <Property name="Text">Requires Intel vPro</Property>
+      <Event name="Click">labelRequiresIntelVPro_Click</Event>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="labelRequiresPowershellRe" children="Controls">
+      <Property name="Anchor">Top, Right</Property>
+      <Property name="Font">Calibri, 12pt, style=Bold</Property>
+      <Property name="Location">689, 130</Property>
+      <Property name="Name">labelRequiresPowershellRe</Property>
+      <Property name="Size">211, 23</Property>
+      <Property name="TabIndex">13</Property>
+      <Property name="Text">Requires Powershell Remoting</Property>
+    </Object>
     <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="textboxCredential" children="Controls">
+      <Property name="Anchor">Top, Right</Property>
       <Property name="Enabled">False</Property>
-      <Property name="Location">811, 13</Property>
+      <Property name="Location">811, 197</Property>
       <Property name="Name">textboxCredential</Property>
       <Property name="Size">115, 27</Property>
       <Property name="TabIndex">7</Property>
@@ -23,7 +61,7 @@
     </Object>
     <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="boxResults" children="Controls">
       <Property name="Anchor">Top, Bottom, Left, Right</Property>
-      <Property name="Location">13, 382</Property>
+      <Property name="Location">13, 387</Property>
       <Property name="Multiline">True</Property>
       <Property name="Name">boxResults</Property>
       <Property name="ScrollBars">Both</Property>
@@ -42,7 +80,8 @@
       <Event name="Click">labelResults_Click</Event>
     </Object>
     <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonSetVProCrendential" children="Controls">
-      <Property name="Location">650, 11</Property>
+      <Property name="Anchor">Top, Right</Property>
+      <Property name="Location">650, 195</Property>
       <Property name="Name">buttonSetVProCrendential</Property>
       <Property name="Size">158, 29</Property>
       <Property name="TabIndex">4</Property>
@@ -66,16 +105,16 @@
       <Property name="ForeColor">ControlText</Property>
       <Property name="Location">13, 40</Property>
       <Property name="Name">TargetGroupBox</Property>
-      <Property name="Size">919, 184</Property>
+      <Property name="Size">631, 184</Property>
       <Property name="TabIndex">0</Property>
       <Property name="TabStop">False</Property>
       <Property name="Text">Target Machines</Property>
       <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonOkManual" children="Controls">
         <Property name="Anchor">Top, Right</Property>
         <Property name="BackgroundImage">
-          <Binary>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</Binary>
+          <Binary>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</Binary>
         </Property>
-        <Property name="Location">853, 42</Property>
+        <Property name="Location">565, 42</Property>
         <Property name="Name">buttonOkManual</Property>
         <Property name="Size">42, 27</Property>
         <Property name="TabIndex">6</Property>
@@ -87,7 +126,7 @@
         <Property name="BackgroundImage">
           <Binary>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</Binary>
         </Property>
-        <Property name="Location">853, 42</Property>
+        <Property name="Location">565, 42</Property>
         <Property name="Name">buttonOkFile</Property>
         <Property name="Size">42, 27</Property>
         <Property name="TabIndex">5</Property>
@@ -102,7 +141,7 @@
         <Property name="Name">boxSelection</Property>
         <Property name="ReadOnly">True</Property>
         <Property name="ScrollBars">Both</Property>
-        <Property name="Size">882, 63</Property>
+        <Property name="Size">594, 63</Property>
         <Property name="TabIndex">3</Property>
         <Event name="TextChanged">boxSelection_TextChanged</Event>
       </Object>
@@ -118,7 +157,7 @@
       </Object>
       <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonBrowseFile" children="Controls">
         <Property name="Anchor">Top, Right</Property>
-        <Property name="Location">820, 44</Property>
+        <Property name="Location">532, 44</Property>
         <Property name="Name">buttonBrowseFile</Property>
         <Property name="Size">30, 23</Property>
         <Property name="TabIndex">1</Property>
@@ -133,7 +172,7 @@
         <Property name="AutoCompleteSource">FileSystem</Property>
         <Property name="Location">149, 43</Property>
         <Property name="Name">boxFile</Property>
-        <Property name="Size">667, 27</Property>
+        <Property name="Size">379, 27</Property>
         <Property name="TabIndex">0</Property>
         <Property name="Visible">False</Property>
         <Event name="TextChanged">boxFile_TextChanged</Event>
@@ -153,7 +192,7 @@
         </Property>
         <Property name="Location">149, 43</Property>
         <Property name="Name">BoxManual</Property>
-        <Property name="Size">701, 27</Property>
+        <Property name="Size">413, 27</Property>
         <Property name="TabIndex">0</Property>
       </Object>
       <Object type="System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="radioAD" children="Controls">
@@ -201,12 +240,12 @@
         <Property name="Location">17, 18</Property>
         <Property name="Name">Actiontabcontrol</Property>
         <Property name="SelectedIndex">0</Property>
-        <Property name="Size">878, 118</Property>
+        <Property name="Size">878, 115</Property>
         <Property name="TabIndex">2</Property>
         <Object type="System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="ConnectivityTab" children="Controls">
           <Property name="Location">4, 28</Property>
           <Property name="Name">ConnectivityTab</Property>
-          <Property name="Size">870, 86</Property>
+          <Property name="Size">870, 83</Property>
           <Property name="TabIndex">0</Property>
           <Property name="Text">Connectivity Check</Property>
           <Property name="UseVisualStyleBackColor">True</Property>
@@ -220,12 +259,14 @@
             <Event name="Click">buttonPortTest_Click</Event>
           </Object>
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonAMTVersion" children="Controls">
+            <Property name="BackColor">1, 92, 163</Property>
+            <Property name="ForeColor">White</Property>
             <Property name="Location">277, 48</Property>
             <Property name="Name">buttonAMTVersion</Property>
             <Property name="Size">123, 30</Property>
             <Property name="TabIndex">6</Property>
             <Property name="Text">AMT Version</Property>
-            <Property name="UseVisualStyleBackColor">True</Property>
+            <Property name="UseVisualStyleBackColor">False</Property>
             <Event name="Click">buttonAMTVersion_Click</Event>
           </Object>
           <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="boxPortTest" children="Controls">
@@ -275,64 +316,76 @@
         <Object type="System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="PowerTab" children="Controls">
           <Property name="Location">4, 28</Property>
           <Property name="Name">PowerTab</Property>
-          <Property name="Size">870, 86</Property>
+          <Property name="Size">870, 83</Property>
           <Property name="TabIndex">1</Property>
           <Property name="Text">Power Options</Property>
           <Property name="UseVisualStyleBackColor">True</Property>
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonPowerState" children="Controls">
+            <Property name="BackColor">1, 92, 163</Property>
+            <Property name="ForeColor">White</Property>
             <Property name="Location">401, 12</Property>
             <Property name="Name">buttonPowerState</Property>
             <Property name="Size">123, 30</Property>
             <Property name="TabIndex">7</Property>
             <Property name="Text">Power State</Property>
-            <Property name="UseVisualStyleBackColor">True</Property>
+            <Property name="UseVisualStyleBackColor">False</Property>
             <Event name="Click">buttonPowerState_Click</Event>
           </Object>
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonBrowse" children="Controls">
             <Property name="Anchor">Top, Right</Property>
+            <Property name="BackColor">1, 92, 163</Property>
+            <Property name="ForeColor">White</Property>
             <Property name="Location">835, 46</Property>
             <Property name="Name">buttonBrowse</Property>
             <Property name="Size">30, 29</Property>
             <Property name="TabIndex">1</Property>
             <Property name="Text">...</Property>
-            <Property name="UseVisualStyleBackColor">True</Property>
+            <Property name="UseVisualStyleBackColor">False</Property>
             <Event name="Click">buttonBrowse_Click</Event>
           </Object>
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonBootFromISO" children="Controls">
             <Property name="Anchor">Top, Right</Property>
+            <Property name="BackColor">1, 92, 163</Property>
+            <Property name="ForeColor">White</Property>
             <Property name="Location">660, 12</Property>
             <Property name="Name">buttonBootFromISO</Property>
             <Property name="Size">205, 30</Property>
             <Property name="TabIndex">5</Property>
             <Property name="Text">Boot from ISO</Property>
-            <Property name="UseVisualStyleBackColor">True</Property>
+            <Property name="UseVisualStyleBackColor">False</Property>
             <Event name="Click">buttonBootFromISO_Click</Event>
           </Object>
           <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="textboxISO" children="Controls">
             <Property name="Anchor">Top, Right</Property>
             <Property name="AutoCompleteMode">SuggestAppend</Property>
             <Property name="AutoCompleteSource">FileSystem</Property>
+            <Property name="BackColor">White</Property>
+            <Property name="ForeColor">Black</Property>
             <Property name="Location">660, 48</Property>
             <Property name="Name">textboxISO</Property>
             <Property name="Size">169, 27</Property>
             <Property name="TabIndex">0</Property>
           </Object>
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonHardwareReset" children="Controls">
+            <Property name="BackColor">1, 92, 163</Property>
+            <Property name="ForeColor">White</Property>
             <Property name="Location">272, 12</Property>
             <Property name="Name">buttonHardwareReset</Property>
             <Property name="Size">123, 30</Property>
             <Property name="TabIndex">4</Property>
             <Property name="Text">Hardware Reset</Property>
-            <Property name="UseVisualStyleBackColor">True</Property>
+            <Property name="UseVisualStyleBackColor">False</Property>
             <Event name="Click">buttonHardwareReset_Click</Event>
           </Object>
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonPowerOn" children="Controls">
+            <Property name="BackColor">1, 92, 163</Property>
+            <Property name="ForeColor">White</Property>
             <Property name="Location">143, 12</Property>
             <Property name="Name">buttonPowerOn</Property>
             <Property name="Size">123, 30</Property>
             <Property name="TabIndex">3</Property>
             <Property name="Text">Power On</Property>
-            <Property name="UseVisualStyleBackColor">True</Property>
+            <Property name="UseVisualStyleBackColor">False</Property>
             <Event name="Click">buttonPowerOn_Click</Event>
           </Object>
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonOSRestart" children="Controls">
@@ -354,12 +407,14 @@
             <Event name="Click">buttonOSShutdown_Click</Event>
           </Object>
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="ButtonPowerOff" children="Controls">
+            <Property name="BackColor">1, 92, 163</Property>
+            <Property name="ForeColor">White</Property>
             <Property name="Location">14, 12</Property>
             <Property name="Name">ButtonPowerOff</Property>
             <Property name="Size">123, 30</Property>
             <Property name="TabIndex">0</Property>
             <Property name="Text">Power Off</Property>
-            <Property name="UseVisualStyleBackColor">True</Property>
+            <Property name="UseVisualStyleBackColor">False</Property>
             <Event name="Click">ButtonPowerOff_Click</Event>
           </Object>
         </Object>
@@ -371,12 +426,14 @@
           <Property name="Text">Process and Services</Property>
           <Property name="UseVisualStyleBackColor">True</Property>
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonListAllProcesses" children="Controls">
+            <Property name="BackColor">170, 0, 120</Property>
+            <Property name="ForeColor">White</Property>
             <Property name="Location">3, 3</Property>
             <Property name="Name">buttonListAllProcesses</Property>
             <Property name="Size">134, 30</Property>
             <Property name="TabIndex">2</Property>
             <Property name="Text">List All Processes</Property>
-            <Property name="UseVisualStyleBackColor">True</Property>
+            <Property name="UseVisualStyleBackColor">False</Property>
             <Event name="Click">buttonListAllProcesses_Click</Event>
           </Object>
         </Object>
@@ -388,12 +445,14 @@
           <Property name="Text">Inventory</Property>
           <Property name="UseVisualStyleBackColor">True</Property>
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonHardwareAssets" children="Controls">
+            <Property name="BackColor">1, 92, 163</Property>
+            <Property name="ForeColor">White</Property>
             <Property name="Location">272, 12</Property>
             <Property name="Name">buttonHardwareAssets</Property>
             <Property name="Size">132, 30</Property>
             <Property name="TabIndex">6</Property>
             <Property name="Text">Hardware Assets</Property>
-            <Property name="UseVisualStyleBackColor">True</Property>
+            <Property name="UseVisualStyleBackColor">False</Property>
             <Event name="Click">buttonHardwareAssets_Click</Event>
           </Object>
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonProcessor" children="Controls">
@@ -441,12 +500,14 @@
           <Property name="Text">Remote</Property>
           <Property name="UseVisualStyleBackColor">True</Property>
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonKVM" children="Controls">
+            <Property name="BackColor">1, 92, 163</Property>
+            <Property name="ForeColor">White</Property>
             <Property name="Location">155, 13</Property>
             <Property name="Name">buttonKVM</Property>
             <Property name="Size">135, 30</Property>
             <Property name="TabIndex">7</Property>
             <Property name="Text">KVM</Property>
-            <Property name="UseVisualStyleBackColor">True</Property>
+            <Property name="UseVisualStyleBackColor">False</Property>
             <Event name="Click">buttonKVM_Click</Event>
           </Object>
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonGPOUpdate" children="Controls">
@@ -540,14 +601,16 @@
           <Property name="Text">vPro HBC Provisioning</Property>
           <Property name="UseVisualStyleBackColor">True</Property>
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonVProUnconfigure" children="Controls">
+            <Property name="BackColor">1, 92, 163</Property>
             <Property name="Font">Calibri, 9pt</Property>
+            <Property name="ForeColor">White</Property>
             <Property name="Location">596, 19</Property>
             <Property name="Name">buttonVProUnconfigure</Property>
             <Property name="Size">83, 59</Property>
             <Property name="TabIndex">6</Property>
             <Property name="Text">vPro
 UnConfigure</Property>
-            <Property name="UseVisualStyleBackColor">True</Property>
+            <Property name="UseVisualStyleBackColor">False</Property>
             <Event name="Click">buttonVProUnconfigure_Click</Event>
           </Object>
           <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="ACUConfigPassword" children="Controls">
@@ -558,21 +621,25 @@ UnConfigure</Property>
             <Property name="Text">XML Template Password</Property>
           </Object>
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonvProConfigure" children="Controls">
+            <Property name="BackColor">1, 92, 163</Property>
+            <Property name="ForeColor">White</Property>
             <Property name="Location">494, 19</Property>
             <Property name="Name">buttonvProConfigure</Property>
             <Property name="Size">83, 59</Property>
             <Property name="TabIndex">3</Property>
             <Property name="Text">Configure</Property>
-            <Property name="UseVisualStyleBackColor">True</Property>
+            <Property name="UseVisualStyleBackColor">False</Property>
             <Event name="Click">buttonvProConfigure_Click</Event>
           </Object>
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonBrowse2" children="Controls">
+            <Property name="BackColor">1, 92, 163</Property>
+            <Property name="ForeColor">White</Property>
             <Property name="Location">458, 21</Property>
             <Property name="Name">buttonBrowse2</Property>
             <Property name="Size">30, 27</Property>
             <Property name="TabIndex">1</Property>
             <Property name="Text">...</Property>
-            <Property name="UseVisualStyleBackColor">True</Property>
+            <Property name="UseVisualStyleBackColor">False</Property>
             <Event name="Click">buttonBrowse2_Click</Event>
           </Object>
           <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="textboxFile" children="Controls">
@@ -625,6 +692,17 @@ UnConfigure</Property>
       <Property name="TabIndex">9</Property>
       <Property name="Text">Export to CSV</Property>
       <Event name="Click">labelExportToCSV_Click</Event>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="label1SelectYourTargetMac" children="Controls">
+      <Property name="Anchor">Top, Right</Property>
+      <Property name="Font">Calibri, 12pt, style=Bold</Property>
+      <Property name="Location">660, 49</Property>
+      <Property name="Name">label1SelectYourTargetMac</Property>
+      <Property name="Size">266, 81</Property>
+      <Property name="TabIndex">12</Property>
+      <Property name="Text">1. Select your target machines
+2. Apply an action
+3. See the results. Export them if you want.</Property>
     </Object>
   </Object>
   <Object type="System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="tabPower" children="Controls">
@@ -1398,13 +1476,21 @@ $buttonHardwareAssets_Click={
 	}
 	$MainForm.Cursor = "Default"
 }
+
+
+
+
+$labelRequiresIntelVPro_Click={
+	#TODO: Place custom script here
+	
+}
 ]]></Code>
   <Bookmarks />
   <BreakPoints>
     <Line Disabled="False">320</Line>
   </BreakPoints>
   <TracePoints />
-  <Mode>1</Mode>
+  <Mode>0</Mode>
   <Assemblies>
     <Assembly>System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll</Assembly>
     <Assembly>System.Management.Automation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</Assembly>
