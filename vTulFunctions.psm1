@@ -156,104 +156,37 @@ function High-CpuUsage{
 	
 	function Get-InstalledSoftware
 	{
-	
-	    <#
-	        .Synopsis
-	            Gets the installed software using Uninstall regkey for specified host.
-	
-	        .Description
-	            Gets the installed software using Uninstall regkey for specified host.
-	
-	        .Parameter ComputerName
-	            Name of the Computer to get the installed software from (Default is localhost.)
-	
-	        .Example
-	            Get-InstalledSoftware
-	            Description
-	            -----------
-	            Gets installed software from local machine
-	
-	        .Example
-	            Get-InstalledSoftware -ComputerName MyServer
-	            Description
-	            -----------
-	            Gets installed software from MyServer
-	
-	        .Example
-	            $Servers | Get-InstalledSoftware
-	            Description
-	            -----------
-	            Gets installed software for each machine in the pipeline
-	
-	        .OUTPUTS
-	            PSCustomObject
-	
-	        .Notes
-	            NAME:      Get-InstalledSoftware
-	            AUTHOR:    YetiCentral\bshell
-	            Website:   www.bsonposh.com
-	            #Requires -Version 2.0
-	    #>
-	
-	    [Cmdletbinding()]
+		[CmdletBinding()]
+	    
 	    Param(
-	        [alias('dnsHostName')]
-	        [Parameter(ValueFromPipelineByPropertyName=$true,ValueFromPipeline=$true)]
-	        [string]$ComputerName = $Env:COMPUTERNAME
+   	        [string]$ComputerName
 	    )
-	    begin 
-	    {
 	
-	            Write-Verbose " [Get-InstalledPrograms] :: Start Begin"
-	            $Culture = New-Object System.Globalization.CultureInfo("en-US")
-	            Write-Verbose " [Get-InstalledPrograms] :: End Begin"
-	
-	    }
-	    process 
-	    {
-	
-	        Write-Verbose " [Get-InstalledPrograms] :: Start Process"
-	        if($ComputerName -match "(.*)(\$)$")
-	        {
-	            $ComputerName = $ComputerName -replace "(.*)(\$)$",'$1'
-	
-	        }
-	        Write-Verbose " [Get-InstalledPrograms] :: `$ComputerName - $ComputerName"
-	        Write-Verbose " [Get-InstalledPrograms] :: Testing Connectivity"
-	        if(Test-Host $ComputerName -TCPPort 135)
-	        {
-	            try
-	            {
-	                $RegKey = Get-RegistryKey -Path "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall" -ComputerName $ComputerName
-	                foreach($key in $RegKey.GetSubKeyNames())   
-	                {   
-	                    $SubKey = $RegKey.OpenSubKey($key)
-	                    if($SubKey.GetValue("DisplayName"))
-	                    {
-	                        $myobj = @{
-	                            Name    = $SubKey.GetValue("DisplayName")   
-	                            Version = $SubKey.GetValue("DisplayVersion")   
-	                            Vendor  = $SubKey.GetValue("Publisher")
-	                        }
-	                        $obj = New-Object PSObject -Property $myobj
-	                        $obj.PSTypeNames.Clear()
-	                        $obj.PSTypeNames.Add('BSonPosh.SoftwareInfo')
-	                        $obj
-	                    }
-	                }   
-	            }
-	            catch
-	            {
-	                Write-Host " Host [$ComputerName] Failed with Error: $($Error[0])" -ForegroundColor Red
-	            }
-	        }
-	        else
-	        {
-	            Write-Host " Host [$ComputerName] Failed Connectivity Test " -ForegroundColor Red
-	        }
-	        Write-Verbose " [Get-InstalledPrograms] :: End Process"
-	
-	    }
+	    # Branch of the Registry  
+		$Branch='LocalMachine'  
+		 
+		# Main Sub Branch you need to open  
+		$SubBranch="SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall"  
+		 
+		$registry=[microsoft.win32.registrykey]::OpenRemoteBaseKey('Localmachine',$computername)  
+		$registrykey=$registry.OpenSubKey($Subbranch)  
+		$SubKeys=$registrykey.GetSubKeyNames()  
+		 
+		# Drill through each key from the list and pull out the value of  
+		# ?DisplayName? ? Write to the Host console the name of the computer  
+		# with the application beside it  
+		$AllSoftware = @()
+		Foreach ($key in $subkeys)  
+		{  
+		    $exactkey=$key  
+		    $NewSubKey=$SubBranch+"\\"+$exactkey  
+		    $ReadUninstall=$registry.OpenSubKey($NewSubKey)
+		    $Value=$ReadUninstall.GetValue("DisplayName")
+			if ($Value){
+			$AllSoftware += $Value
+			}
+		}  
+		return $AllSoftware
 	}
 	
 	#endregion 

@@ -1106,12 +1106,17 @@ $buttonGPOUpdate_Click={
 }
 
 $buttonSoftware_Click={
+	Add-Logs -text "Get installed software on $Target"
 	$MainForm.Cursor = "WaitCursor"
 	foreach ($Computer in $Target)
 	{
-		$result = Get-InstalledSoftware -ComputerName $Computer -verbose |Format-Table * -AutoSize| Out-String -Width $boxResults.Width
-		Add-Logs -text "$Computer - Installed Softwares List"
-		Add-Results $result
+		$AllSoftware = Get-InstalledSoftware -ComputerName $Computer
+		foreach ($Software in $AllSoftware)
+		{
+			if ($AllSoftware.count -gt 0){
+			Add-Results "$Computer`t$Software"}
+			else {Add-Results "$Computer`tGetSoftware-Failed"}
+		}
 	}
 	$MainForm.Cursor = "Default"
 }
