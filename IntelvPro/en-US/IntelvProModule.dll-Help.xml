@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<helpItems xmlns="http://msh" schema="maml">
+
+
+  <providerHelp xmlns:maml="http://schemas.microsoft.com/maml/2004/10"
+  xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10">
+    <Name>
+      AmtSystem
+    </Name>
+
+    <Drives>
+      <Para>AMT</Para>
+    </Drives>
+    <Synopsis>
+      Provides access to Intel(r) Active Management Technology hardware.
+    </Synopsis>
+
+    <DetailedDescription>
+      <para>
+
+The AmtSystem provider for Windows PowerShell lets you add, change, clear, and delete Intel(r) AMT configuration data on local or remote computers.
+
+The AmtSystem provider exposes a Windows PowerShell drive with a directory structure that corresponds to a logical grouping of hardware configuration settings.
+These groupings are known as containers.
+
+
+Directory Hierarchy of the AmtSystem Provider
+---------------
+The directory hierarchy of the AmtSysm provider  as follows:
+
+amt:\
+--- Config
+------ AccessMonitor
+--------- Events
+------ ACL
+--------- Digest
+--------- Kerberos
+------ Etc
+--------- Clock
+--------- CodeVersions
+--------- Hosts
+--------- Networking
+--------- Networks
+--------- PowerPolicy
+------------ Schemes
+--------- Protocol
+------------ Digest
+------------ Kerberos
+------------ TLS
+------------ Wired8021x
+------------ Wireless
+--------- RegisteredProfiles
+--------- Services
+------------ WebUI
+------ KVM
+------ Redirection
+------ 3PDStorage
+--------- Enterprises
+--------- Allocations
+--------- Registrations
+--- HadwareAssets
+------ BIOS
+------ Baseboard
+------ ComputerSystem
+------ Memory
+------ FRU
+------ Cpu
+--- 3PDStorage
+--- Logs
+
+      </para>
+    </DetailedDescription>
+
+    <Notes>
+      <para>
+
+      </para>
+    </Notes>
+
+    <RelatedLinks>
+    </RelatedLinks>
+
+    <Tasks>
+      <Task>
+        <Title>
+          Mapping AmtSystem drives to local or remote computers
+        </Title>
+
+        <Description>
+          <para></para>
+        </Description>
+
+        <Examples>
+          <Example>
+            <Title>
+              -------------------------- EXAMPLE 1 --------------------------
+            </Title>
+            <Introduction>
+              <para>This command maps the Amt: drive to an Amt System using prompted credentials</para>
+            </Introduction>
+            <Code>
+$AmtCred = Get-Credential
+New-PSDrive -PSProvider AmtSystem -Name amt -Root \ -ComputerName myAmt.vprodemo.com -Credential $AmtCred
+            </Code>
+            <Remarks>
+              <para>
+If the username contains a domain, Kerberos authentication will be used, otherwise Digest authentication will be used.
+If no credential are provided then AMT will be accessed using the currently logged on users credentials.
+              </para>
+            </Remarks>
+          </Example>
+          <Example>
+            <Title>
+              -------------------------- EXAMPLE 2 --------------------------
+            </Title>
+            <Introduction>
+              <para>This command maps the Amt: drive to an Amt System using prompted credentials using TLS(HTTPS) security </para>
+            </Introduction>
+            <Code>
+$AmtCred = Get-Credential
+New-PSDrive -PSProvider AmtSystem -Name amt -Root \ -ComputerName myAmt.vprodemo.com -Credential $AmtCred -TLS
+            </Code>
+            <Remarks>
+              <para>
+Certificate trust is established using the Windows Certificate store.  Both Server and Client Certificate authentication is supported.
+              </para>
+            </Remarks>
+          </Example>
+          <Example>
+            <Title>
+              -------------------------- EXAMPLE 3 --------------------------
+            </Title>
+            <Introduction>
+              <para>
+This command maps the Amt: drive to an Amt System using currently logged on user and TLS(HTTPS) security
+              </para>
+            </Introduction>
+            <Code>
+New-PSDrive -PSProvider AmtSystem -Name amt -Root \ -ComputerName myAmt.vprodemo.com -TLS
+            </Code>
+            <Remarks>
+          <para>
+By omitting the –Credential parameter results in the currently logged on users credentials being used to access AMT and eliminates the need to store credentials or have them in your scripts.
+The AMT system needs to be configured to use Kerberos before this will work.
+              </para>
+            </Remarks>
+          </Example>
+          <Example>
+            <Title>
+              -------------------------- EXAMPLE 4 --------------------------
+            </Title>
+            <Introduction>
+              <para>This command reads credentials from encrypted storage and then maps an AmtSystem drive </para>
+            </Introduction>
+            <Code>
+$AmtCred = Read-AmtCredential
+New-PSDrive -PSProvider AmtSystem -Name amt -Root \ -ComputerName myAmt.vprodemo.com -Credential $AmtCred -TLS
+            </Code>
+            <Remarks>
+              <para>You can write credentials to encrypted storage using the  Write-AmtCredential cmdlet</para>
+            </Remarks>
+          </Example>
+          <Example>
+            <Title>
+              -------------------------- EXAMPLE 5 --------------------------
+            </Title>
+            <Introduction>
+              <para>
+This command maps the Amt: drive to an Amt System using using credentials defined in the code itself
+              </para>
+            </Introduction>
+            <Code>
+$AmtCred = Get-AmtCredential -Username admin -Password P@ssword -Force
+New-PSDrive -PSProvider AmtSystem -Name amt -Root \ -ComputerName myAmt.vprodemo.com -Credential $AmtCred -TLS
+            </Code>
+            <Remarks>
+              <para>
+Defining credentials directly in code is not as secure as the other techniques.
+              </para>
+            </Remarks>
+          </Example>
+        </Examples>
+      </Task>
+
+    </Tasks>
+
+
+    <CmdletHelpPaths>
+    </CmdletHelpPaths>
+  </providerHelp>
+
+
+  <providerHelp xmlns:maml="http://schemas.microsoft.com/maml/2004/10"
+ xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10">
+    <Name>
+      Heci
+    </Name>
+
+    <Drives>
+      <Para>Heci</Para>
+    </Drives>
+    <Synopsis>
+      Provides access the Host Embedded Controller Interface (HECI) on a system that supports Intel(r) Active Management Technology
+    </Synopsis>
+
+    <DetailedDescription>
+      <para>
+The Heci provider lets you add, change, clear, and delete Management Engine data on local computers.
+
+The Heci provider exposes a Windows PowerShell drive with a directory structure that corresponds to a logical grouping of hardware configuration settings.
+These groupings are known as containers.
+
+Directory Hierarchy of the Heci Provider
+---------------
+The directory hierarchy of the AmtSysm provider  as follows:
+
+Heci:\
+--- Config
+------ Etc
+--------- CodeVersions
+--------- Protocol
+------------ Digest
+------------ TLS
+--------------- Hashes
+------ Local
+--------- Log
+------ Remote
+--------- Log
+
+      </para>
+    </DetailedDescription>
+
+    <RelatedLinks>
+    </RelatedLinks>
+
+
+    <CmdletHelpPaths>
+
+
+
+
+    </CmdletHelpPaths>
+  </providerHelp>
+
+
+  <command:command
+  xmlns:maml="http://schemas.microsoft.com/maml/2004/10"
+  xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10"
+  xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+    <command:details>
+      <command:name>Enable-AmtClientMode</command:name>
+      <command:verb>Enable</command:verb>
+      <command:noun>AmtClientMode</command:noun>
+    </command:details>
+    <maml:description>
+      <maml:para>
+        Enables AMT using OS credentials
+      </maml:para>
+    </maml:description>
+    <command:syntax>
+
+    </command:syntax>
+  </command:command>
+
+
+
+
+
+
+
+
+
+
+
+
+</helpItems>
