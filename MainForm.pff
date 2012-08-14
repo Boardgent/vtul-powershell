@@ -13,6 +13,14 @@
     <Property name="Text">vTul</Property>
     <Property name="WindowState">Maximized</Property>
     <Event name="Load">OnLoadFormEvent</Event>
+    <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="textboxCredential" children="Controls">
+      <Property name="Enabled">False</Property>
+      <Property name="Location">811, 13</Property>
+      <Property name="Name">textboxCredential</Property>
+      <Property name="Size">115, 27</Property>
+      <Property name="TabIndex">7</Property>
+      <Property name="Text">None</Property>
+    </Object>
     <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="boxResults" children="Controls">
       <Property name="Anchor">Top, Bottom, Left, Right</Property>
       <Property name="Location">13, 382</Property>
@@ -33,13 +41,22 @@
       <Property name="Text">Results:</Property>
       <Event name="Click">labelResults_Click</Event>
     </Object>
+    <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonSetVProCrendential" children="Controls">
+      <Property name="Location">650, 11</Property>
+      <Property name="Name">buttonSetVProCrendential</Property>
+      <Property name="Size">158, 29</Property>
+      <Property name="TabIndex">4</Property>
+      <Property name="Text">Set vPro Crendential</Property>
+      <Property name="UseVisualStyleBackColor">True</Property>
+      <Event name="Click">buttonSetVProCrendential_Click</Event>
+    </Object>
     <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="labelDescription" children="Controls">
       <Property name="Anchor">Top, Left, Right</Property>
       <Property name="Font">Calibri, 12pt, style=Bold</Property>
       <Property name="ForeColor">MenuHighlight</Property>
       <Property name="Location">13, 13</Property>
       <Property name="Name">labelDescription</Property>
-      <Property name="Size">919, 23</Property>
+      <Property name="Size">598, 23</Property>
       <Property name="TabIndex">1</Property>
       <Property name="Text">vTul is a free tool for remote non-agent Windows management powered by Intel vPro</Property>
     </Object>
@@ -83,6 +100,7 @@
         <Property name="Location">17, 114</Property>
         <Property name="Multiline">True</Property>
         <Property name="Name">boxSelection</Property>
+        <Property name="ReadOnly">True</Property>
         <Property name="ScrollBars">Both</Property>
         <Property name="Size">882, 63</Property>
         <Property name="TabIndex">3</Property>
@@ -190,7 +208,7 @@
           <Property name="Name">ConnectivityTab</Property>
           <Property name="Size">870, 86</Property>
           <Property name="TabIndex">0</Property>
-          <Property name="Text">Connectiviy Check</Property>
+          <Property name="Text">Connectivity Check</Property>
           <Property name="UseVisualStyleBackColor">True</Property>
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonPortTest" children="Controls">
             <Property name="Location">277, 12</Property>
@@ -252,6 +270,15 @@
           <Property name="TabIndex">1</Property>
           <Property name="Text">Power Options</Property>
           <Property name="UseVisualStyleBackColor">True</Property>
+          <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonPowerState" children="Controls">
+            <Property name="Location">401, 12</Property>
+            <Property name="Name">buttonPowerState</Property>
+            <Property name="Size">123, 30</Property>
+            <Property name="TabIndex">7</Property>
+            <Property name="Text">Power State</Property>
+            <Property name="UseVisualStyleBackColor">True</Property>
+            <Event name="Click">buttonPowerState_Click</Event>
+          </Object>
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonAMTVersion" children="Controls">
             <Property name="Location">272, 48</Property>
             <Property name="Name">buttonAMTVersion</Property>
@@ -308,23 +335,23 @@
             <Property name="UseVisualStyleBackColor">True</Property>
             <Event name="Click">buttonPowerOn_Click</Event>
           </Object>
-          <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonRestart" children="Controls">
+          <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonOSRestart" children="Controls">
             <Property name="Location">143, 48</Property>
-            <Property name="Name">buttonRestart</Property>
+            <Property name="Name">buttonOSRestart</Property>
             <Property name="Size">123, 30</Property>
             <Property name="TabIndex">2</Property>
-            <Property name="Text">Restart</Property>
+            <Property name="Text">OS Restart</Property>
             <Property name="UseVisualStyleBackColor">True</Property>
-            <Event name="Click">buttonRestart_Click</Event>
+            <Event name="Click">buttonOSRestart_Click</Event>
           </Object>
-          <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonShutdown" children="Controls">
+          <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonOSShutdown" children="Controls">
             <Property name="Location">14, 48</Property>
-            <Property name="Name">buttonShutdown</Property>
+            <Property name="Name">buttonOSShutdown</Property>
             <Property name="Size">123, 30</Property>
             <Property name="TabIndex">1</Property>
-            <Property name="Text">Shutdown</Property>
+            <Property name="Text">OS Shutdown</Property>
             <Property name="UseVisualStyleBackColor">True</Property>
-            <Event name="Click">buttonShutdown_Click</Event>
+            <Event name="Click">buttonOSShutdown_Click</Event>
           </Object>
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="ButtonPowerOff" children="Controls">
             <Property name="Location">14, 12</Property>
@@ -503,13 +530,6 @@
           <Property name="TabIndex">7</Property>
           <Property name="Text">vPro Provisioning</Property>
           <Property name="UseVisualStyleBackColor">True</Property>
-          <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="textboxCredential" children="Controls">
-            <Property name="Location">26, 51</Property>
-            <Property name="Name">textboxCredential</Property>
-            <Property name="Size">158, 27</Property>
-            <Property name="TabIndex">7</Property>
-            <Property name="Text">Not have set</Property>
-          </Object>
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonVProUnconfigure" children="Controls">
             <Property name="Font">Calibri, 9pt</Property>
             <Property name="Location">596, 19</Property>
@@ -527,15 +547,6 @@ UnConfigure</Property>
             <Property name="Size">228, 27</Property>
             <Property name="TabIndex">5</Property>
             <Property name="Text">XML Template Password</Property>
-          </Object>
-          <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonSetVProCrendential" children="Controls">
-            <Property name="Location">26, 19</Property>
-            <Property name="Name">buttonSetVProCrendential</Property>
-            <Property name="Size">158, 29</Property>
-            <Property name="TabIndex">4</Property>
-            <Property name="Text">Set vPro Crendential</Property>
-            <Property name="UseVisualStyleBackColor">True</Property>
-            <Event name="Click">buttonSetVProCrendential_Click</Event>
           </Object>
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonvProConfigure" children="Controls">
             <Property name="Location">494, 19</Property>
@@ -632,7 +643,9 @@ UnConfigure</Property>
     <Property name="ShowHelp">True</Property>
     <Event name="FileOk">openfiledialog2_FileOk</Event>
   </Object>
-  <Code><![CDATA[$BoxManual.Text = Hostname
+  <Code><![CDATA[
+Import-Module BitsTransfer
+$BoxManual.Text = Hostname
 
 #region Add-Results
 
@@ -820,43 +833,44 @@ $tabpage1_Click={
 }
 
 $ButtonPowerOff_Click={
+	$MainForm.Cursor = "WaitCursor"
 	foreach ($Computer in $Target)
 	{
-	$result = Invoke-AMTPowerManagement -computername $Computer -Operation PowerOff -Credential $vProCredential 
-	$result = $result | Out-String
-	if ($result -eq "")
+		$result = Invoke-AMTPowerManagement -computername $Computer -Operation PowerOff -Credential $vProCredential 
+			if ($result.Status -eq "Successful")
 		{
-			Add-Results "$Command failed on $Computer"
+			Add-Results "$Computer`tPowerOff-Success"
 		}
-	else {Add-Results $result}
+		elseif ($result.Status -eq "Unauthorized")
+		{
+			Add-Results "$Computer`tPowerOff-Unauthorized"
+		}
+		else {Add-Results "$Computer`tPowerOff-CannotConnect"}
 	}
+	$MainForm.Cursor = "Default"
 }
 
 
-$buttonShutdown_Click={
-	$date = Get-Date 
-	Add-Results "Shutdown job started at $date"
-		foreach ($computer in $Target)
+$buttonOSShutdown_Click={
+	$MainForm.Cursor = "WaitCursor"
+	foreach ($Computer in $Target)
 	{
-	Stop-Computer -ComputerName $computer
-	Add-Results "Shutdown signal sent to $computer"
-	Add-Logs "Shutdown signal sent to $computer"
+		$result = shutdown /s /t 00 /m \\$Computer
+		if (!$?){Add-Results "$Computer`tShutdownSignal-Failed"}	
+		else {Add-Results "$Computer`tShutdownSignal-Success"}
 	}
-	$date = Get-Date 
-	Add-Results "Shutdown job ended at $date"
+	$MainForm.Cursor = "Default"
 }
 
-$buttonRestart_Click={
-	$date = Get-Date 
-	Add-Results "Restart job started at $date"
-	foreach ($computer in $Target)
+$buttonOSRestart_Click={
+	$MainForm.Cursor = "WaitCursor"
+	foreach ($Computer in $Target)
 	{
-	Restart-Computer -ComputerName $computer
-	Add-Results "Restart signal sent to $computer"
-	Add-Logs "Restart signal sent to $computer"
+		$result = shutdown /r /t 00 /m \\$Computer
+		if (!$?){Add-Results "$Computer`tRestartSignal-Failed"}	
+		else {Add-Results "$Computer`tRestartSignal-Success"}
 	}
-	$date = Get-Date 
-	Add-Results "Restart job ended at $date"
+	$MainForm.Cursor = "Default"
 }
 $radioAD_Click={
 	$Target = GenerateFormAD
@@ -873,10 +887,22 @@ $labelYourSelection_Click={
 }
 
 $buttonPowerOn_Click={
-	foreach ($Computer in $TargetGroupBox)
+	$MainForm.Cursor = "WaitCursor"
+	foreach ($Computer in $Target)
 	{
-	Invoke-AMTPowerManagement -computer:$Computer -Operation:PowerON
-	}
+		$result = Invoke-AMTPowerManagement -computername $Computer -Operation PowerOn -Credential $vProCredential 
+			if ($result.Status -eq "Successful")
+		{
+			Add-Results "$Computer`tPowerOn-Success"
+		}
+		elseif ($result.Status -eq "Unauthorized")
+		{
+			Add-Results "$Computer`tPowerOn-Unauthorized"
+		}
+		else {Add-Results "$Computer`tPowerOn-CannotConnect"}
+	$MainForm.Cursor = "Default"
+}
+
 }
 
 $labelClearResults_Click={
@@ -1053,7 +1079,7 @@ $buttonGPOUpdate_Click={
 			if ($result.ReturnValue -eq 0){
 				#Show-MsgBox -BoxType "OKOnly" -Title "$Computer - Group Policy Update" -Prompt "Gpupdate ran successfully!" -Icon "Information"
 				#Add-Results $($result|Out-String)
-				Add-Results "Gpupdated ran sucessfully on $Computer" 
+				Add-Results "Gpupdated ran Successfully on $Computer" 
 			}
 			else {
 		#	Show-MsgBox -BoxType "OKOnly" -Title "$ComputerName - Group Policy Update" -Prompt "Gpupdate does not seem to work! Are you in a Domain ?" -Icon "Exclamation"
@@ -1079,7 +1105,7 @@ $buttonMotherBoard_Click={
 	foreach ($Computer in $Target)
 	{
 		Add-logs -text "$Computer - MotherBoard"
-		$result = Get-MotherBoard -ComputerName $Computer | Out-String
+		$result = Get-MotherBoard -ComputerName $Computer
 		Add-Results $result
 	}
 	
@@ -1114,14 +1140,24 @@ $buttonListAllProcesses_Click={
 }
 
 $buttonAMTVersion_Click={
-	#TODO: Place custom script here
-	Foreach ($Computer in $Target)
+	$MainForm.Cursor = "WaitCursor"
+	foreach ($Computer in $Target)
 	{
-		Add-Results $Computer
-		$AMTVersion = Get-AMTFirmwareVersion -computername $Computer
-		Add-Results $AMTVersion.Value
-		Add-Results ""
+		$result = get-AMTFirmwareVersion $Computer -credential $VProCredential
+		if ($result.Value -eq "Cannot Connect")
+		{
+			Add-Results "$Computer`tAMTVersion-CannotConnect"
+		}
+		elseif ($result.Value -eq "Unauthorized")
+		{
+			Add-Results "$Computer`tAMTVersion-Unauthorized"
+		}
+		else {
+			$value = $result.Value
+			Add-Results $Computer`t$value
+		}
 	}
+	$MainForm.Cursor = "Default"
 }
 
 $labelExportToTxt_Click={
@@ -1135,11 +1171,21 @@ $labelExportToCSV_Click={
 }
 
 $buttonHardwareReset_Click={
-	foreach ($Computer in $TargetGroupBox)
+	$MainForm.Cursor = "WaitCursor"
+	foreach ($Computer in $Target)
 	{
-	Invoke-AMTPowerManagement -computer:$Computer -Operation:reset
+		$result = Invoke-AMTPowerManagement -computername $Computer -Operation Reset -Credential $vProCredential 
+			if ($result.Status -eq "Successful")
+		{
+			Add-Results "$Computer`tHardwareReset-Success"
+		}
+		elseif ($result.Status -eq "Unauthorized")
+		{
+			Add-Results "$Computer`tHardwareReset-Unauthorized"
+		}
+		else {Add-Results "$Computer`tHardwareReset-CannotConnect"}
 	}
-	
+	$MainForm.Cursor = "Default"	
 }
 
 $buttonBootFromISO_Click={
@@ -1179,7 +1225,8 @@ $buttonVNCToVPro_Click={
 	{
 	Add-Logs "VNC session started to $Computer"
 	Add-Results "VNC session started to $Computer"
-	.\ThirdPartyTools\vncviewerplus.exe $ComputerName
+	$Command = "C:\Program Files (x86)\RealVNC\VNCViewerPlus\vncviewerplus.exe"
+	Start-Process $Command $Computer
 	}
 }
 
@@ -1210,7 +1257,13 @@ $buttonvProConfigure_Click={
 		Remove-Item .\ThirdPartyTools\ACUConfig\profile.xml -Force
 		Remove-Item .\ThirdPartyTools\ACUConfig\ACUConfig.bat -Force
 		$result = psexec.exe /accepteula /s \\$Computer C:\ACUConfig\ACUConfig.bat
-		Add-Results $result
+		Remove-Item \\$Computer\C$\ACUConfig -Force -Recurse
+		$result = $result | Out-String
+		if ($result.Contains("Exit with code 0")-eq $true)
+		{
+			Add-Results "$Computer`tACUConfig-Success"
+		}
+		else {Add-Results "$Computer`tACUConfig-Failed"}
 	}
 	$MainForm.Cursor = "Default"
 }
@@ -1240,10 +1293,45 @@ $buttonVProUnconfigure_Click={
 		Copy-Item .\ThirdPartyTools\ACUConfig -Destination \\$Computer\C$\ -Force -Recurse
 		Remove-Item .\ThirdPartyTools\ACUConfig\ACUConfig.bat -Force
 		$result = psexec.exe /accepteula /s \\$Computer C:\ACUConfig\ACUConfig.bat
-		Add-Results $result
+		Remove-Item \\$Computer\C$\ACUConfig -Force -Recurse
+		$result = $result | Out-String
+		if ($result.Contains("Exit with code 0")-eq $true)
+		{
+			Add-Results "$Computer`tACUUnConfig-Success"
+		}
+		elseif ($result.Contains("Exit with code 2")-eq $true)
+		{
+			Add-Results "$Computer`tACUUnConfig-Already"
+		}
+		else {Add-Results "$Computer`tACUUnConfig-Failed"}
 	}
 	$MainForm.Cursor = "Default"
 
+}
+
+$buttonPowerState_Click={
+	$MainForm.Cursor = "WaitCursor"
+	foreach ($Computer in $Target)
+	{
+		$result = get-AMTPowerState $Computer -credential $VProCredential
+		if ($result."Power State Description" -eq "On (S0)")
+		{
+			Add-Results "$Computer`tAMTPowerState-On"
+		}
+		elseif ($result."Power State Description" -eq "Off (S5)")
+		{
+			Add-Results "$Computer`tAMTPowerState-Off"
+		}
+		elseif ($result."Power State Description" -eq "Unauthorized")
+		{
+			Add-Results "$Computer`tAMTPowerState-Unauthorized"
+		}
+		else {
+			Add-Results "$Computer`tAMTPowerState-CannotConnect"
+		}
+	}
+	$MainForm.Cursor = "Default"
+	
 }
 ]]></Code>
   <Mode>0</Mode>
