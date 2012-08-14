@@ -222,7 +222,7 @@
           <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="boxPortTest" children="Controls">
             <Property name="Location">401, 14</Property>
             <Property name="Name">boxPortTest</Property>
-            <Property name="Size">34, 27</Property>
+            <Property name="Size">49, 27</Property>
             <Property name="TabIndex">5</Property>
             <Property name="Text">80</Property>
           </Object>
@@ -528,7 +528,7 @@
           <Property name="Name">tabpage1</Property>
           <Property name="Size">870, 86</Property>
           <Property name="TabIndex">7</Property>
-          <Property name="Text">vPro Provisioning</Property>
+          <Property name="Text">vPro HBC Provisioning</Property>
           <Property name="UseVisualStyleBackColor">True</Property>
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonVProUnconfigure" children="Controls">
             <Property name="Font">Calibri, 9pt</Property>
@@ -1321,6 +1321,14 @@ $buttonPowerState_Click={
 		elseif ($result."Power State Description" -eq "Off (S5)")
 		{
 			Add-Results "$Computer`tAMTPowerState-Off"
+		}
+		elseif ($result."Power State Description" -eq "Hibernate (S4)")
+		{
+			Add-Results "$Computer`tAMTPowerState-Hibernate"
+		}
+		elseif ($result."Power State Description" -eq "Standby (S3)")
+		{
+			Add-Results "$Computer`tAMTPowerState-Standby"
 		}
 		elseif ($result."Power State Description" -eq "Unauthorized")
 		{
