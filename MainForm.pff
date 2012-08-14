@@ -219,6 +219,15 @@
             <Property name="UseVisualStyleBackColor">True</Property>
             <Event name="Click">buttonPortTest_Click</Event>
           </Object>
+          <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonAMTVersion" children="Controls">
+            <Property name="Location">277, 48</Property>
+            <Property name="Name">buttonAMTVersion</Property>
+            <Property name="Size">123, 30</Property>
+            <Property name="TabIndex">6</Property>
+            <Property name="Text">AMT Version</Property>
+            <Property name="UseVisualStyleBackColor">True</Property>
+            <Event name="Click">buttonAMTVersion_Click</Event>
+          </Object>
           <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="boxPortTest" children="Controls">
             <Property name="Location">401, 14</Property>
             <Property name="Name">boxPortTest</Property>
@@ -278,15 +287,6 @@
             <Property name="Text">Power State</Property>
             <Property name="UseVisualStyleBackColor">True</Property>
             <Event name="Click">buttonPowerState_Click</Event>
-          </Object>
-          <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonAMTVersion" children="Controls">
-            <Property name="Location">272, 48</Property>
-            <Property name="Name">buttonAMTVersion</Property>
-            <Property name="Size">123, 30</Property>
-            <Property name="TabIndex">6</Property>
-            <Property name="Text">AMT Version</Property>
-            <Property name="UseVisualStyleBackColor">True</Property>
-            <Event name="Click">buttonAMTVersion_Click</Event>
           </Object>
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonBrowse" children="Controls">
             <Property name="Anchor">Top, Right</Property>
@@ -431,14 +431,14 @@
           <Property name="TabIndex">6</Property>
           <Property name="Text">Remote</Property>
           <Property name="UseVisualStyleBackColor">True</Property>
-          <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonVNCToVPro" children="Controls">
+          <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonKVM" children="Controls">
             <Property name="Location">155, 13</Property>
-            <Property name="Name">buttonVNCToVPro</Property>
+            <Property name="Name">buttonKVM</Property>
             <Property name="Size">135, 30</Property>
             <Property name="TabIndex">7</Property>
-            <Property name="Text">VNC to vPro</Property>
+            <Property name="Text">KVM</Property>
             <Property name="UseVisualStyleBackColor">True</Property>
-            <Event name="Click">buttonVNCToVPro_Click</Event>
+            <Event name="Click">buttonKVM_Click</Event>
           </Object>
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonGPOUpdate" children="Controls">
             <Property name="Location">155, 49</Property>
@@ -1232,7 +1232,7 @@ $buttonUpdates_Click={
 	$MainForm.Cursor = "Default"
 }
 
-$buttonVNCToVPro_Click={
+$buttonKVM_Click={
 	$MainForm.Cursor = "WaitCursor"
 	foreach ($Computer in $Target)
 	{
