@@ -800,3 +800,43 @@ function GenerateFormAD {
 	}
 	return $Target
 } #Endregion GenerateFormAD
+
+#region Test-PSRemoting
+	
+	function Test-PSRemoting 
+	{ 
+	    Param(
+	        [alias('dnsHostName')]
+	        [Parameter(Mandatory=$true,ValueFromPipelineByPropertyName=$true,ValueFromPipeline=$true)]
+	        [string]$ComputerName
+	    )
+	    Process
+	    {
+	        Write-Verbose " [Test-PSRemoting] :: Start Process"
+	        if($ComputerName -match "(.*)(\$)$")
+	        {
+	            $ComputerName = $ComputerName -replace "(.*)(\$)$",'$1'
+	        }
+	        
+	        try 
+	        { 
+	            
+	            $result = Invoke-Command -ComputerName $computername { 1 } -ErrorAction SilentlyContinue
+	            
+	            if($result -eq 1 )
+	            {
+	                return $True
+	            }
+	            else
+	            {
+	                return $False
+	            }
+	        } 
+	        catch 
+	        { 
+	            return $False 
+	        } 
+	    }
+	} 
+	
+	#endregion
