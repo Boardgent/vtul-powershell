@@ -962,7 +962,14 @@ $buttonPermissions_Click={
 	Add-Logs "Permsision test started to: $Target"
 	foreach ($Computer in $Target)
 	{
-		Add-Results "$Computer"
+		if ((Test-Path \\$Computer\Admin$)-eq $true)
+		{
+			Add-Results "$Computer`tPermissions-OK"
+		}
+		else 
+		{
+			Add-Results "$Computer`tPermissions-Failed"
+		}
 	}
 	$MainForm.Cursor = "Default"
 	
@@ -1356,7 +1363,7 @@ $buttonPowerState_Click={
 	
 }
 ]]></Code>
-  <Mode>0</Mode>
+  <Mode>1</Mode>
   <Assemblies>
     <Assembly>System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll</Assembly>
     <Assembly>System.Management.Automation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</Assembly>
