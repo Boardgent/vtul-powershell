@@ -1,1 +1,0 @@
-powershell .\vTul.Export.ps1 -STA

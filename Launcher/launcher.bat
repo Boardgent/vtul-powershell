@@ -1,0 +1,1 @@
+powershell -version 2.0 -Sta -ExecutionPolicy UnRestricted -File .\vTul.ps1
