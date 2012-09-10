@@ -39,14 +39,13 @@
       <Property name="Size">142, 23</Property>
       <Property name="TabIndex">14</Property>
       <Property name="Text">Requires Intel vPro</Property>
-      <Event name="Click">labelRequiresIntelVPro_Click</Event>
     </Object>
     <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="labelRequiresPowershellRe" children="Controls">
       <Property name="Anchor">Top, Right</Property>
       <Property name="Font">Calibri, 12pt, style=Bold</Property>
       <Property name="Location">689, 130</Property>
       <Property name="Name">labelRequiresPowershellRe</Property>
-      <Property name="Size">211, 23</Property>
+      <Property name="Size">237, 23</Property>
       <Property name="TabIndex">13</Property>
       <Property name="Text">Requires Powershell Remoting</Property>
     </Object>
@@ -421,7 +420,7 @@
         <Object type="System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="ProcessAndServicesTab" children="Controls">
           <Property name="Location">4, 28</Property>
           <Property name="Name">ProcessAndServicesTab</Property>
-          <Property name="Size">870, 86</Property>
+          <Property name="Size">870, 83</Property>
           <Property name="TabIndex">4</Property>
           <Property name="Text">Process and Services</Property>
           <Property name="UseVisualStyleBackColor">True</Property>
@@ -440,7 +439,7 @@
         <Object type="System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="InventoryTab" children="Controls">
           <Property name="Location">4, 28</Property>
           <Property name="Name">InventoryTab</Property>
-          <Property name="Size">870, 86</Property>
+          <Property name="Size">870, 83</Property>
           <Property name="TabIndex">5</Property>
           <Property name="Text">Inventory</Property>
           <Property name="UseVisualStyleBackColor">True</Property>
@@ -495,7 +494,7 @@
         <Object type="System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="RemoteTab" children="Controls">
           <Property name="Location">4, 28</Property>
           <Property name="Name">RemoteTab</Property>
-          <Property name="Size">870, 86</Property>
+          <Property name="Size">870, 83</Property>
           <Property name="TabIndex">6</Property>
           <Property name="Text">Remote</Property>
           <Property name="UseVisualStyleBackColor">True</Property>
@@ -559,7 +558,7 @@
         <Object type="System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="CustomTab" children="Controls">
           <Property name="Location">4, 28</Property>
           <Property name="Name">CustomTab</Property>
-          <Property name="Size">870, 86</Property>
+          <Property name="Size">870, 83</Property>
           <Property name="TabIndex">2</Property>
           <Property name="Text">Custom Commands</Property>
           <Property name="UseVisualStyleBackColor">True</Property>
@@ -596,10 +595,21 @@
         <Object type="System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="tabpage1" children="Controls">
           <Property name="Location">4, 28</Property>
           <Property name="Name">tabpage1</Property>
-          <Property name="Size">870, 86</Property>
+          <Property name="Size">870, 83</Property>
           <Property name="TabIndex">7</Property>
           <Property name="Text">vPro HBC Provisioning</Property>
           <Property name="UseVisualStyleBackColor">True</Property>
+          <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="ShowPassword" children="Controls">
+            <Property name="Font">Calibri, 12pt</Property>
+            <Property name="Location">458, 51</Property>
+            <Property name="Name">ShowPassword</Property>
+            <Property name="Size">30, 26</Property>
+            <Property name="TabIndex">8</Property>
+            <Property name="Text">• </Property>
+            <Property name="UseVisualStyleBackColor">True</Property>
+            <Event name="MouseDown">ShowPassword_MouseDown</Event>
+            <Event name="MouseUp">ShowPassword_MouseUp</Event>
+          </Object>
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonVProUnconfigure" children="Controls">
             <Property name="BackColor">1, 92, 163</Property>
             <Property name="Font">Calibri, 9pt</Property>
@@ -618,7 +628,7 @@ UnConfigure</Property>
             <Property name="Name">ACUConfigPassword</Property>
             <Property name="Size">228, 27</Property>
             <Property name="TabIndex">5</Property>
-            <Property name="Text">XML Template Password</Property>
+            <Property name="UseSystemPasswordChar">True</Property>
           </Object>
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonvProConfigure" children="Controls">
             <Property name="BackColor">1, 92, 163</Property>
@@ -650,8 +660,15 @@ UnConfigure</Property>
             <Property name="Size">228, 27</Property>
             <Property name="TabIndex">0</Property>
           </Object>
+          <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="labelPasswordTemplate" children="Controls">
+            <Property name="Location">83, 51</Property>
+            <Property name="Name">labelPasswordTemplate</Property>
+            <Property name="Size">148, 23</Property>
+            <Property name="TabIndex">7</Property>
+            <Property name="Text">Password Template:</Property>
+          </Object>
           <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="labelVProACUConfigXMLTemp" children="Controls">
-            <Property name="Location">224, 1</Property>
+            <Property name="Location">12, 25</Property>
             <Property name="Name">labelVProACUConfigXMLTemp</Property>
             <Property name="Size">228, 23</Property>
             <Property name="TabIndex">2</Property>
@@ -1478,11 +1495,16 @@ $buttonHardwareAssets_Click={
 }
 
 
-
-
-$labelRequiresIntelVPro_Click={
+$ShowPassword_MouseDown=[System.Windows.Forms.MouseEventHandler]{
+#Event Argument: $_ = [System.Windows.Forms.MouseEventArgs]
 	#TODO: Place custom script here
-	
+		$ACUConfigPassword.UseSystemPasswordChar = $false
+}
+
+$ShowPassword_MouseUp=[System.Windows.Forms.MouseEventHandler]{
+#Event Argument: $_ = [System.Windows.Forms.MouseEventArgs]
+	#TODO: Place custom script here
+		$ACUConfigPassword.UseSystemPasswordChar = $true
 }
 ]]></Code>
   <Bookmarks />
