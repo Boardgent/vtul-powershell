@@ -581,6 +581,7 @@
             <Property name="Name">BoxCustomCommands</Property>
             <Property name="Size">826, 71</Property>
             <Property name="TabIndex">1</Property>
+            <Event name="KeyDown">BoxCustomCommands_KeyDown</Event>
           </Object>
           <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="labelYouCanSendYourOwnPow" children="Controls">
             <Property name="Font">Calibri, 8.25pt</Property>
@@ -747,6 +748,7 @@ UnConfigure</Property>
     <Property name="ShowHelp">True</Property>
     <Event name="FileOk">openfiledialog2_FileOk</Event>
   </Object>
+  <Object type="System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="timer1" />
   <Code><![CDATA[
 Import-Module BitsTransfer
 $BoxManual.Text = Hostname
@@ -1496,15 +1498,33 @@ $buttonHardwareAssets_Click={
 
 
 $ShowPassword_MouseDown=[System.Windows.Forms.MouseEventHandler]{
-#Event Argument: $_ = [System.Windows.Forms.MouseEventArgs]
-	#TODO: Place custom script here
+
 		$ACUConfigPassword.UseSystemPasswordChar = $false
 }
 
 $ShowPassword_MouseUp=[System.Windows.Forms.MouseEventHandler]{
-#Event Argument: $_ = [System.Windows.Forms.MouseEventArgs]
-	#TODO: Place custom script here
 		$ACUConfigPassword.UseSystemPasswordChar = $true
+}
+
+$BoxCustomCommands_KeyDown=[System.Windows.Forms.KeyEventHandler]{
+	if ($_.Control -and ($_.KeyCode -eq 13))
+	{
+		$MainForm.Cursor = "WaitCursor"
+		[string]$Command = $BoxCustomCommands.Text 
+		Add-Logs -text "Running the custom Command $Command in: $Target"
+		foreach ($Computer in $Target)
+		{
+
+		$result = Invoke-Expression $Command
+		$result = $result | Out-String
+		if ($result -eq "")
+			{
+				Add-Results "$Command failed on $Computer"
+			}
+		else {Add-Results $result}
+		}
+		$MainForm.Cursor = "Default"
+	}
 }
 ]]></Code>
   <Bookmarks />
@@ -1512,7 +1532,7 @@ $ShowPassword_MouseUp=[System.Windows.Forms.MouseEventHandler]{
     <Line Disabled="False">320</Line>
   </BreakPoints>
   <TracePoints />
-  <Mode>0</Mode>
+  <Mode>1</Mode>
   <Assemblies>
     <Assembly>System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll</Assembly>
     <Assembly>System.Management.Automation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</Assembly>
