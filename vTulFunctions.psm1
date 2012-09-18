@@ -571,7 +571,7 @@ $SaveFileDialog.ShowHelp = $true
 $SaveFileDialog.initialDirectory = $initialDirectory
 $SaveFileDialog.AddExtension  = $true
 $SaveFileDialog.DefaultExt  = "txt"
-$SaveFileDialog.filter = "Text Files (*.txt)| *.txt"
+$SaveFileDialog.filter = "Text File (*.txt)| *.txt"
 $SaveFileDialog.ShowDialog() | Out-Null
 $SaveFileDialog.filename
 } 
@@ -589,7 +589,7 @@ $SaveFileDialog.ShowHelp = $true
 $SaveFileDialog.initialDirectory = $initialDirectory
 $SaveFileDialog.AddExtension  = $true
 $SaveFileDialog.DefaultExt  = "csv"
-$SaveFileDialog.filter = "CSV (Comma Delimited)(*.csv)| *.csv"
+$SaveFileDialog.filter = "Comma Delimited (*.csv)| *.csv"
 $SaveFileDialog.ShowDialog() | Out-Null
 $SaveFileDialog.filename
 } 

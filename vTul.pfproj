@@ -7,6 +7,7 @@
     <File ReferenceName="Call-MainForm_pff" Build="0">MainForm.pff</File>
     <File ReferenceName="Call-Global_ps1" Build="0" CommandExtension="True">Globals.ps1</File>
     <File ReferenceName="" Build="1">vTulFunctions.psm1</File>
+    <File ReferenceName="Call-About_pff" Build="0">About.pff</File>
   </Files>
   <Packager>
     <General>

@@ -13,41 +13,49 @@
     <Property name="Text">vTul - by Tulpep</Property>
     <Property name="WindowState">Maximized</Property>
     <Event name="Load">OnLoadFormEvent</Event>
+    <Object type="System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Help" children="Controls">
+      <Property name="Anchor">Top, Right</Property>
+      <Property name="BackgroundImage">
+        <Binary>iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsEAAA7BAbiRa+0AAAMASURBVDhPlZTbS9NhHMb9Q5Kw6HxjRSB4TovS5YEMQhRDwULzEGQmJB0gvQhFoUUHZltrmSazzZZLnbbNoa5ZbnMiemEOtQsvEqWrLp72fMdPWZqjH7y8P7bf+3mf5/l+3zcmJspjs9lgNBqh1b5EV1cXPlosiLZm2/8ez5RACPN6vVhaXsbGxrrMHrdboPzf5XJFhxNit9uxsLAE15dlqPWzqLjvRf71cRTVTaCxPQCjdQ6BmXkBm0ymf0P5ARXNzK4IqLhhBrl10yi44YGqxg1V5RhSylxILLajtN6B4dF5WK39O0Mpn8MbCIoKATVMI6vah0eGH9BaVmUmNPnKgIyEwj6BGgwGcRWRHQNnRlR2vnpSYKqaMfSPreHvJ6dqCCcvWZBQPISCazZ8m5qGRqPZArIIlD7qXkRRrVOAeTcnBWj+vAr31CIaH0/CM/NT2G7/Co7n6gV6JNsEbY8fOp1uq0jMjtBnr/1ihaCsqnFkXnUgrcyG06HfUko+ILeiT4CMZU/SUxw4+wqHznWisGYwJMgqULHNF9qtfeAUGwQpgyqO5fQgNlmDHpMzhPuFstu9AoxL12F/qk6yZDHb2trCQPpnn3EnApXQCeIiwvRvbcDvAJ50DEbAqDAuzSiCIoDB4HdU3rEhPr9XoPHZ72R3LmBeVNZhsMkGijKCROFFkyhUq9VhhcyQLdP6fFyAhBHEwQUEjjgmcCKnY3OTg+lmUcbBnuSB2Kw0YTxKlkEfzpS8x96MMEwBUpGqtFuUHc3sBmEcrHBsohGdpjmBRRxFHn7Kftg+GrYV2lnyCb3fa7VifS2IJvVEBDAu1Sp96PPPbtlVupt0Wh9xeFFe/ylUCL1AabnlxbBkyLaiwsMZZhmnLljg/hqUdqHlbbeMcoMQerfFKVlKTsnd2Jf0RmbFLg8AYVyz2X873Wv8QGl0s9UnYNpKuzyIvHI7bjV5YB6Yl+PGmPh91PtRqZhiRbkTOXMzFoAtsqPN3ejMlVA2bHNzs8yE/TcoqoVdPvgDelIkn946mNcAAAAASUVORK5CYII=</Binary>
+      </Property>
+      <Property name="BackgroundImageLayout">Center</Property>
+      <Property name="Cursor">Hand</Property>
+      <Property name="Location">911, 1</Property>
+      <Property name="Name">Help</Property>
+      <Property name="Size">27, 23</Property>
+      <Property name="TabIndex">16</Property>
+      <Event name="Click">Help_Click</Event>
+    </Object>
+    <Object type="System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="About" children="Controls">
+      <Property name="Anchor">Top, Right</Property>
+      <Property name="BackgroundImage">
+        <Binary>iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsEAAA7BAbiRa+0AAALnSURBVDhPlZTfS5NRHMb9Q6K0QKqLCroJbWH+iKxgrgzKitXNMPthhDKkJApiV9W8ECKwVJy00KXi8rVt1nQjZ1O3uUwdORW9CAlCoV0EPu35vr1zpikOvpwDZ+dznud5v+dkZGzxUxQFDocDTU1NMr5zOrHVnnXrwWBINns8HoRDo5hfWMDy8pKMXFOUHln3+/1bwwnxer2Ix+fh/7wAa2scFQ/DMNwcxOXqAGqfhWB3TiEyNiFqN1XMk6ko+lUFXaoZh6F6EufvTUkZqqM4UfEJucaPuGbuR58vllSrRrLOZiAQEGWE1dZ9gb4qlALZlO/4lfiNbt8iSs1BFN9SoTkXHQK12Wyydw3UbrcjPjMvykqqhlFaE5UiOBJbwsrKChKJBEoqvSgs96LA1IcjV9wove7GyGgUDQ0Nq0AtaN/QLIx3fSi+PSxQrXjI8PgPvOycFRDrqLFXFO473YnGtjHpgtRHYrCEPm8Zg+6qK2lpUGxxZGZURGVUQ0jW8dfIPmmT4txk7pUsCRXbnLAl7jwaEBsEaHXI8Fa+amwignA4jLyydmTmN2N34WrxEK5ZrVYVSP/ss7JKlwCpknVA3yabWzrGZYMG3HGsWZRptbeoTQRZLJZV4NzcDG7c94CKCD146o1sSAdOT38Tyzt17Snb/I+msL6+XgUyQwb69MWgAAljPhypprVzEoSxiowdyMx1gKqy8pP2k3P2JHs4lSFhbE6nKyIb0kNPB9IW1/fk9aSKankgY1tzFRsbX0lGj+t8YpOna8UNSz8XJee8Cy6B7S9SZDxX3ifXMGVX627Saf1Df1jaQIL/C9Wb3NAq56yC7AI3MnW9OHzGiaGRObHKN2Dd9dNeEEIfPBmQDGlpl65bslLnqjJeAMK0p+2/T5r25rHRu5SIgNnQtFpi8sJsCaLrfQyjoSgY04YPw790ymfImhVmyw/CkbFwjZltaHOz15e5EsobwKblSNi2Qdt+4tM2/AHfAifD57wGLwAAAABJRU5ErkJggg==</Binary>
+      </Property>
+      <Property name="BackgroundImageLayout">Center</Property>
+      <Property name="Cursor">Hand</Property>
+      <Property name="Location">883, 1</Property>
+      <Property name="Name">About</Property>
+      <Property name="Size">27, 23</Property>
+      <Property name="TabIndex">15</Property>
+      <Event name="Click">About_Click</Event>
+    </Object>
     <Object type="System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="picturebox2" children="Controls">
       <Property name="Anchor">Top, Right</Property>
       <Property name="BackColor">1, 92, 163</Property>
-      <Property name="Location">666, 159</Property>
+      <Property name="Location">666, 137</Property>
       <Property name="Name">picturebox2</Property>
       <Property name="Size">24, 24</Property>
       <Property name="TabIndex">11</Property>
       <Property name="TabStop">False</Property>
     </Object>
-    <Object type="System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="picturebox1" children="Controls">
-      <Property name="Anchor">Top, Right</Property>
-      <Property name="BackColor">170, 0, 120</Property>
-      <Property name="Location">666, 129</Property>
-      <Property name="Name">picturebox1</Property>
-      <Property name="Size">24, 24</Property>
-      <Property name="TabIndex">10</Property>
-      <Property name="TabStop">False</Property>
-    </Object>
     <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="labelRequiresIntelVPro" children="Controls">
       <Property name="Anchor">Top, Right</Property>
-      <Property name="Font">Calibri, 12pt, style=Bold</Property>
-      <Property name="Location">689, 160</Property>
+      <Property name="Font">Calibri, 12pt</Property>
+      <Property name="Location">689, 138</Property>
       <Property name="Name">labelRequiresIntelVPro</Property>
       <Property name="Size">142, 23</Property>
       <Property name="TabIndex">14</Property>
       <Property name="Text">Requires Intel vPro</Property>
-    </Object>
-    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="labelRequiresPowershellRe" children="Controls">
-      <Property name="Anchor">Top, Right</Property>
-      <Property name="Font">Calibri, 12pt, style=Bold</Property>
-      <Property name="Location">689, 130</Property>
-      <Property name="Name">labelRequiresPowershellRe</Property>
-      <Property name="Size">237, 23</Property>
-      <Property name="TabIndex">13</Property>
-      <Property name="Text">Requires Powershell Remoting</Property>
     </Object>
     <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="textboxCredential" children="Controls">
       <Property name="Anchor">Top, Right</Property>
@@ -113,6 +121,7 @@
         <Property name="BackgroundImage">
           <Binary>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</Binary>
         </Property>
+        <Property name="BackgroundImageLayout">Stretch</Property>
         <Property name="Location">565, 42</Property>
         <Property name="Name">buttonOkManual</Property>
         <Property name="Size">42, 27</Property>
@@ -425,8 +434,8 @@
           <Property name="Text">Process and Services</Property>
           <Property name="UseVisualStyleBackColor">True</Property>
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonListAllProcesses" children="Controls">
-            <Property name="BackColor">170, 0, 120</Property>
-            <Property name="ForeColor">White</Property>
+            <Property name="BackColor">Control</Property>
+            <Property name="ForeColor">ControlText</Property>
             <Property name="Location">3, 3</Property>
             <Property name="Name">buttonListAllProcesses</Property>
             <Property name="Size">134, 30</Property>
@@ -555,47 +564,9 @@
             <Event name="Click">buttonRemoteDesktop_Click</Event>
           </Object>
         </Object>
-        <Object type="System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="CustomTab" children="Controls">
+        <Object type="System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="vProProvisioning" children="Controls">
           <Property name="Location">4, 28</Property>
-          <Property name="Name">CustomTab</Property>
-          <Property name="Size">870, 83</Property>
-          <Property name="TabIndex">2</Property>
-          <Property name="Text">Custom Commands</Property>
-          <Property name="UseVisualStyleBackColor">True</Property>
-          <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="ButtonCustomCommands" children="Controls">
-            <Property name="Anchor">Top, Right</Property>
-            <Property name="BackgroundImage">
-              <Binary>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</Binary>
-            </Property>
-            <Property name="Location">832, 52</Property>
-            <Property name="Name">ButtonCustomCommands</Property>
-            <Property name="Size">35, 31</Property>
-            <Property name="TabIndex">7</Property>
-            <Property name="UseVisualStyleBackColor">True</Property>
-            <Event name="Click">ButtonCustomCommands_Click</Event>
-          </Object>
-          <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="BoxCustomCommands" children="Controls">
-            <Property name="Anchor">Top, Left, Right</Property>
-            <Property name="Location">3, 12</Property>
-            <Property name="Multiline">True</Property>
-            <Property name="Name">BoxCustomCommands</Property>
-            <Property name="Size">826, 71</Property>
-            <Property name="TabIndex">1</Property>
-            <Event name="KeyDown">BoxCustomCommands_KeyDown</Event>
-          </Object>
-          <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="labelYouCanSendYourOwnPow" children="Controls">
-            <Property name="Font">Calibri, 8.25pt</Property>
-            <Property name="Location">-1, 0</Property>
-            <Property name="Name">labelYouCanSendYourOwnPow</Property>
-            <Property name="Size">875, 18</Property>
-            <Property name="TabIndex">0</Property>
-            <Property name="Text">You can send your own powershelll scripts  to the computers. Refer to the target computers using the variable $Computer. Example: Stop-Computer -ComputerName $Computer</Property>
-            <Event name="Click">labelYouCanSendYourOwnPow_Click</Event>
-          </Object>
-        </Object>
-        <Object type="System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="tabpage1" children="Controls">
-          <Property name="Location">4, 28</Property>
-          <Property name="Name">tabpage1</Property>
+          <Property name="Name">vProProvisioning</Property>
           <Property name="Size">870, 83</Property>
           <Property name="TabIndex">7</Property>
           <Property name="Text">vPro HBC Provisioning</Property>
@@ -677,6 +648,54 @@ UnConfigure</Property>
             <Event name="Click">labelVProACUConfigXMLTemp_Click</Event>
           </Object>
         </Object>
+        <Object type="System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="CustomTab" children="Controls">
+          <Property name="Location">4, 28</Property>
+          <Property name="Name">CustomTab</Property>
+          <Property name="Size">870, 83</Property>
+          <Property name="TabIndex">2</Property>
+          <Property name="Text">Custom Commands</Property>
+          <Property name="UseVisualStyleBackColor">True</Property>
+          <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="labelCtrlEnter" children="Controls">
+            <Property name="Anchor">Top, Right</Property>
+            <Property name="Location">777, 60</Property>
+            <Property name="Name">labelCtrlEnter</Property>
+            <Property name="Size">90, 23</Property>
+            <Property name="TabIndex">8</Property>
+            <Property name="Text">Ctrl + Enter</Property>
+          </Object>
+          <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="ButtonCustomCommands" children="Controls">
+            <Property name="Anchor">Top, Right</Property>
+            <Property name="BackgroundImage">
+              <Binary>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</Binary>
+            </Property>
+            <Property name="BackgroundImageLayout">Stretch</Property>
+            <Property name="Location">793, 20</Property>
+            <Property name="Name">ButtonCustomCommands</Property>
+            <Property name="Size">43, 37</Property>
+            <Property name="TabIndex">7</Property>
+            <Property name="UseVisualStyleBackColor">True</Property>
+            <Event name="Click">ButtonCustomCommands_Click</Event>
+          </Object>
+          <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="BoxCustomCommands" children="Controls">
+            <Property name="Anchor">Top, Left, Right</Property>
+            <Property name="Location">3, 12</Property>
+            <Property name="Multiline">True</Property>
+            <Property name="Name">BoxCustomCommands</Property>
+            <Property name="ScrollBars">Vertical</Property>
+            <Property name="Size">771, 71</Property>
+            <Property name="TabIndex">1</Property>
+            <Event name="KeyDown">BoxCustomCommands_KeyDown</Event>
+          </Object>
+          <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="labelYouCanSendYourOwnPow" children="Controls">
+            <Property name="Font">Calibri, 9pt</Property>
+            <Property name="Location">-1, -1</Property>
+            <Property name="Name">labelYouCanSendYourOwnPow</Property>
+            <Property name="Size">905, 18</Property>
+            <Property name="TabIndex">0</Property>
+            <Property name="Text">You can send your own powershelll scripts to the computers. Refer to the target computers using the variable `$Computer. Example: Stop-Computer `$Computer</Property>
+            <Event name="Click">labelYouCanSendYourOwnPow_Click</Event>
+          </Object>
+        </Object>
       </Object>
     </Object>
     <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="labelClearResults" children="Controls">
@@ -713,7 +732,7 @@ UnConfigure</Property>
     </Object>
     <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="label1SelectYourTargetMac" children="Controls">
       <Property name="Anchor">Top, Right</Property>
-      <Property name="Font">Calibri, 12pt, style=Bold</Property>
+      <Property name="Font">Calibri, 12pt</Property>
       <Property name="Location">660, 49</Property>
       <Property name="Name">label1SelectYourTargetMac</Property>
       <Property name="Size">266, 81</Property>
@@ -1255,15 +1274,8 @@ $buttonListAllProcesses_Click={
 	Add-Logs -text "List all process in : $Target"
 	foreach ($Computer in $Target)
 	{
-		$ProcessALL = get-process -ComputerName $Computer
-		if (!$?){Add-Results "$Computer`tFailedToConnect"}	
-		else {
-			foreach ($Process in $ProcessALL)
-			{
-				$Process = $Process.ProcessName
-				Add-Results "$Computer`t$Process"
-			}
-		}
+		$result = tasklist.exe /s $Computer /FO CSV
+		Add-Results "$Computert$result"
 	}
 	$MainForm.Cursor = "Default"
 }
@@ -1526,7 +1538,16 @@ $BoxCustomCommands_KeyDown=[System.Windows.Forms.KeyEventHandler]{
 		$MainForm.Cursor = "Default"
 	}
 }
-]]></Code>
+
+$About_Click={
+	Call-About_pff
+}
+
+
+
+$Help_Click={
+	Start-Process "http://www.tulpep.com/Solutions/vTul"
+}]]></Code>
   <Bookmarks />
   <BreakPoints>
     <Line Disabled="False">320</Line>
@@ -1552,7 +1573,7 @@ $BoxCustomCommands_KeyDown=[System.Windows.Forms.KeyEventHandler]{
       <ManifestCreation>1</ManifestCreation>
       <CustomManifest>
       </CustomManifest>
-      <Platform>-1</Platform>
+      <Platform>3</Platform>
       <RunSTA>0</RunSTA>
     </General>
     <Security>

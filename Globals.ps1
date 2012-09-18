@@ -22,5 +22,3 @@ function Get-ScriptDirectory
 
 #Sample variable that provides the location of the script
 [string]$ScriptDirectory = Get-ScriptDirectory
-
-
