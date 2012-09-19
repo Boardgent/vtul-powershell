@@ -16,7 +16,11 @@
     <Object type="System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Help" children="Controls">
       <Property name="Anchor">Top, Right</Property>
       <Property name="BackgroundImage">
+<<<<<<< HEAD
         <Binary>iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsEAAA7BAbiRa+0AAAMASURBVDhPlZTbS9NhHMb9Q5Kw6HxjRSB4TovS5YEMQhRDwULzEGQmJB0gvQhFoUUHZltrmSazzZZLnbbNoa5ZbnMiemEOtQsvEqWrLp72fMdPWZqjH7y8P7bf+3mf5/l+3zcmJspjs9lgNBqh1b5EV1cXPlosiLZm2/8ez5RACPN6vVhaXsbGxrrMHrdboPzf5XJFhxNit9uxsLAE15dlqPWzqLjvRf71cRTVTaCxPQCjdQ6BmXkBm0ymf0P5ARXNzK4IqLhhBrl10yi44YGqxg1V5RhSylxILLajtN6B4dF5WK39O0Mpn8MbCIoKATVMI6vah0eGH9BaVmUmNPnKgIyEwj6BGgwGcRWRHQNnRlR2vnpSYKqaMfSPreHvJ6dqCCcvWZBQPISCazZ8m5qGRqPZArIIlD7qXkRRrVOAeTcnBWj+vAr31CIaH0/CM/NT2G7/Co7n6gV6JNsEbY8fOp1uq0jMjtBnr/1ihaCsqnFkXnUgrcyG06HfUko+ILeiT4CMZU/SUxw4+wqHznWisGYwJMgqULHNF9qtfeAUGwQpgyqO5fQgNlmDHpMzhPuFstu9AoxL12F/qk6yZDHb2trCQPpnn3EnApXQCeIiwvRvbcDvAJ50DEbAqDAuzSiCIoDB4HdU3rEhPr9XoPHZ72R3LmBeVNZhsMkGijKCROFFkyhUq9VhhcyQLdP6fFyAhBHEwQUEjjgmcCKnY3OTg+lmUcbBnuSB2Kw0YTxKlkEfzpS8x96MMEwBUpGqtFuUHc3sBmEcrHBsohGdpjmBRRxFHn7Kftg+GrYV2lnyCb3fa7VifS2IJvVEBDAu1Sp96PPPbtlVupt0Wh9xeFFe/ylUCL1AabnlxbBkyLaiwsMZZhmnLljg/hqUdqHlbbeMcoMQerfFKVlKTsnd2Jf0RmbFLg8AYVyz2X873Wv8QGl0s9UnYNpKuzyIvHI7bjV5YB6Yl+PGmPh91PtRqZhiRbkTOXMzFoAtsqPN3ejMlVA2bHNzs8yE/TcoqoVdPvgDelIkn946mNcAAAAASUVORK5CYII=</Binary>
+=======
+        <Binary>iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADr8AAA6/ATgFUyQAAAMASURBVDhPlZTbS9NhHMb9Q5Kw6HxjRSB4TovS5YEMQhRDwULzEGQmJB0gvQhFoUUHZltrmSazzZZLnbbNoa5ZbnMiemEOtQsvEqWrLp72fMdPWZqjH7y8P7bf+3mf5/l+3zcmJspjs9lgNBqh1b5EV1cXPlosiLZm2/8ez5RACPN6vVhaXsbGxrrMHrdboPzf5XJFhxNit9uxsLAE15dlqPWzqLjvRf71cRTVTaCxPQCjdQ6BmXkBm0ymf0P5ARXNzK4IqLhhBrl10yi44YGqxg1V5RhSylxILLajtN6B4dF5WK39O0Mpn8MbCIoKATVMI6vah0eGH9BaVmUmNPnKgIyEwj6BGgwGcRWRHQNnRlR2vnpSYKqaMfSPreHvJ6dqCCcvWZBQPISCazZ8m5qGRqPZArIIlD7qXkRRrVOAeTcnBWj+vAr31CIaH0/CM/NT2G7/Co7n6gV6JNsEbY8fOp1uq0jMjtBnr/1ihaCsqnFkXnUgrcyG06HfUko+ILeiT4CMZU/SUxw4+wqHznWisGYwJMgqULHNF9qtfeAUGwQpgyqO5fQgNlmDHpMzhPuFstu9AoxL12F/qk6yZDHb2trCQPpnn3EnApXQCeIiwvRvbcDvAJ50DEbAqDAuzSiCIoDB4HdU3rEhPr9XoPHZ72R3LmBeVNZhsMkGijKCROFFkyhUq9VhhcyQLdP6fFyAhBHEwQUEjjgmcCKnY3OTg+lmUcbBnuSB2Kw0YTxKlkEfzpS8x96MMEwBUpGqtFuUHc3sBmEcrHBsohGdpjmBRRxFHn7Kftg+GrYV2lnyCb3fa7VifS2IJvVEBDAu1Sp96PPPbtlVupt0Wh9xeFFe/ylUCL1AabnlxbBkyLaiwsMZZhmnLljg/hqUdqHlbbeMcoMQerfFKVlKTsnd2Jf0RmbFLg8AYVyz2X873Wv8QGl0s9UnYNpKuzyIvHI7bjV5YB6Yl+PGmPh91PtRqZhiRbkTOXMzFoAtsqPN3ejMlVA2bHNzs8yE/TcoqoVdPvgDelIkn946mNcAAAAASUVORK5CYII=</Binary>
+>>>>>>> improvement
       </Property>
       <Property name="BackgroundImageLayout">Center</Property>
       <Property name="Cursor">Hand</Property>
@@ -29,7 +33,11 @@
     <Object type="System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="About" children="Controls">
       <Property name="Anchor">Top, Right</Property>
       <Property name="BackgroundImage">
+<<<<<<< HEAD
         <Binary>iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsEAAA7BAbiRa+0AAALnSURBVDhPlZTfS5NRHMb9Q6K0QKqLCroJbWH+iKxgrgzKitXNMPthhDKkJApiV9W8ECKwVJy00KXi8rVt1nQjZ1O3uUwdORW9CAlCoV0EPu35vr1zpikOvpwDZ+dznud5v+dkZGzxUxQFDocDTU1NMr5zOrHVnnXrwWBINns8HoRDo5hfWMDy8pKMXFOUHln3+/1bwwnxer2Ix+fh/7wAa2scFQ/DMNwcxOXqAGqfhWB3TiEyNiFqN1XMk6ko+lUFXaoZh6F6EufvTUkZqqM4UfEJucaPuGbuR58vllSrRrLOZiAQEGWE1dZ9gb4qlALZlO/4lfiNbt8iSs1BFN9SoTkXHQK12Wyydw3UbrcjPjMvykqqhlFaE5UiOBJbwsrKChKJBEoqvSgs96LA1IcjV9wove7GyGgUDQ0Nq0AtaN/QLIx3fSi+PSxQrXjI8PgPvOycFRDrqLFXFO473YnGtjHpgtRHYrCEPm8Zg+6qK2lpUGxxZGZURGVUQ0jW8dfIPmmT4txk7pUsCRXbnLAl7jwaEBsEaHXI8Fa+amwignA4jLyydmTmN2N34WrxEK5ZrVYVSP/ss7JKlwCpknVA3yabWzrGZYMG3HGsWZRptbeoTQRZLJZV4NzcDG7c94CKCD146o1sSAdOT38Tyzt17Snb/I+msL6+XgUyQwb69MWgAAljPhypprVzEoSxiowdyMx1gKqy8pP2k3P2JHs4lSFhbE6nKyIb0kNPB9IW1/fk9aSKankgY1tzFRsbX0lGj+t8YpOna8UNSz8XJee8Cy6B7S9SZDxX3ifXMGVX627Saf1Df1jaQIL/C9Wb3NAq56yC7AI3MnW9OHzGiaGRObHKN2Dd9dNeEEIfPBmQDGlpl65bslLnqjJeAMK0p+2/T5r25rHRu5SIgNnQtFpi8sJsCaLrfQyjoSgY04YPw790ymfImhVmyw/CkbFwjZltaHOz15e5EsobwKblSNi2Qdt+4tM2/AHfAifD57wGLwAAAABJRU5ErkJggg==</Binary>
+=======
+        <Binary>iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADr8AAA6/ATgFUyQAAALnSURBVDhPlZTfS5NRHMb9Q6K0QKqLCroJbWH+iKxgrgzKitXNMPthhDKkJApiV9W8ECKwVJy00KXi8rVt1nQjZ1O3uUwdORW9CAlCoV0EPu35vr1zpikOvpwDZ+dznud5v+dkZGzxUxQFDocDTU1NMr5zOrHVnnXrwWBINns8HoRDo5hfWMDy8pKMXFOUHln3+/1bwwnxer2Ix+fh/7wAa2scFQ/DMNwcxOXqAGqfhWB3TiEyNiFqN1XMk6ko+lUFXaoZh6F6EufvTUkZqqM4UfEJucaPuGbuR58vllSrRrLOZiAQEGWE1dZ9gb4qlALZlO/4lfiNbt8iSs1BFN9SoTkXHQK12Wyydw3UbrcjPjMvykqqhlFaE5UiOBJbwsrKChKJBEoqvSgs96LA1IcjV9wove7GyGgUDQ0Nq0AtaN/QLIx3fSi+PSxQrXjI8PgPvOycFRDrqLFXFO473YnGtjHpgtRHYrCEPm8Zg+6qK2lpUGxxZGZURGVUQ0jW8dfIPmmT4txk7pUsCRXbnLAl7jwaEBsEaHXI8Fa+amwignA4jLyydmTmN2N34WrxEK5ZrVYVSP/ss7JKlwCpknVA3yabWzrGZYMG3HGsWZRptbeoTQRZLJZV4NzcDG7c94CKCD146o1sSAdOT38Tyzt17Snb/I+msL6+XgUyQwb69MWgAAljPhypprVzEoSxiowdyMx1gKqy8pP2k3P2JHs4lSFhbE6nKyIb0kNPB9IW1/fk9aSKankgY1tzFRsbX0lGj+t8YpOna8UNSz8XJee8Cy6B7S9SZDxX3ifXMGVX627Saf1Df1jaQIL/C9Wb3NAq56yC7AI3MnW9OHzGiaGRObHKN2Dd9dNeEEIfPBmQDGlpl65bslLnqjJeAMK0p+2/T5r25rHRu5SIgNnQtFpi8sJsCaLrfQyjoSgY04YPw790ymfImhVmyw/CkbFwjZltaHOz15e5EsobwKblSNi2Qdt+4tM2/AHfAifD57wGLwAAAABJRU5ErkJggg==</Binary>
+>>>>>>> improvement
       </Property>
       <Property name="BackgroundImageLayout">Center</Property>
       <Property name="Cursor">Hand</Property>
@@ -84,7 +92,6 @@
       <Property name="Size">112, 21</Property>
       <Property name="TabIndex">6</Property>
       <Property name="Text">Results:</Property>
-      <Event name="Click">labelResults_Click</Event>
     </Object>
     <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonSetVProCrendential" children="Controls">
       <Property name="Anchor">Top, Right</Property>
@@ -151,7 +158,6 @@
         <Property name="ScrollBars">Both</Property>
         <Property name="Size">594, 63</Property>
         <Property name="TabIndex">3</Property>
-        <Event name="TextChanged">boxSelection_TextChanged</Event>
       </Object>
       <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="labelYourSelection" children="Controls">
         <Property name="Font">Calibri, 12pt, style=Bold</Property>
@@ -183,7 +189,6 @@
         <Property name="Size">379, 27</Property>
         <Property name="TabIndex">0</Property>
         <Property name="Visible">False</Property>
-        <Event name="TextChanged">boxFile_TextChanged</Event>
       </Object>
       <Object type="System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="BoxManual" children="Controls">
         <Property name="Anchor">Top, Left, Right</Property>
@@ -202,6 +207,7 @@
         <Property name="Name">BoxManual</Property>
         <Property name="Size">413, 27</Property>
         <Property name="TabIndex">0</Property>
+        <Event name="KeyDown">BoxManual_KeyDown</Event>
       </Object>
       <Object type="System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="radioAD" children="Controls">
         <Property name="Location">17, 66</Property>
@@ -242,7 +248,6 @@
       <Property name="TabIndex">3</Property>
       <Property name="TabStop">False</Property>
       <Property name="Text">Actions</Property>
-      <Event name="Enter">ActionGroupBox_Enter</Event>
       <Object type="System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Actiontabcontrol" children="Controls">
         <Property name="Anchor">Top, Left, Right</Property>
         <Property name="Location">17, 18</Property>
@@ -328,10 +333,58 @@
           <Property name="TabIndex">1</Property>
           <Property name="Text">Power Options</Property>
           <Property name="UseVisualStyleBackColor">True</Property>
-          <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonPowerState" children="Controls">
+          <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonBootCDDVD" children="Controls">
+            <Property name="BackColor">1, 92, 163</Property>
+            <Property name="ForeColor">White</Property>
+            <Property name="Location">530, 45</Property>
+            <Property name="Name">buttonBootCDDVD</Property>
+            <Property name="Size">123, 30</Property>
+            <Property name="TabIndex">11</Property>
+            <Property name="Text">Boot CD / DVD</Property>
+            <Property name="UseVisualStyleBackColor">False</Property>
+            <Event name="Click">buttonBootCDDVD_Click</Event>
+            <Event name="MouseHover">buttonBootCDDVD_MouseHover</Event>
+          </Object>
+          <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonBootToHD" children="Controls">
+            <Property name="BackColor">1, 92, 163</Property>
+            <Property name="ForeColor">White</Property>
+            <Property name="Location">530, 12</Property>
+            <Property name="Name">buttonBootToHD</Property>
+            <Property name="Size">123, 30</Property>
+            <Property name="TabIndex">10</Property>
+            <Property name="Text">Boot to HD</Property>
+            <Property name="UseVisualStyleBackColor">False</Property>
+            <Event name="Click">buttonBootToHD_Click</Event>
+            <Event name="MouseHover">buttonBootToHD_MouseHover</Event>
+          </Object>
+          <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonBootToPXE" children="Controls">
+            <Property name="BackColor">1, 92, 163</Property>
+            <Property name="ForeColor">White</Property>
+            <Property name="Location">401, 45</Property>
+            <Property name="Name">buttonBootToPXE</Property>
+            <Property name="Size">123, 30</Property>
+            <Property name="TabIndex">9</Property>
+            <Property name="Text">Boot to PXE</Property>
+            <Property name="UseVisualStyleBackColor">False</Property>
+            <Event name="Click">buttonBootToPXE_Click</Event>
+            <Event name="MouseHover">buttonBootToPXE_MouseHover</Event>
+          </Object>
+          <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonBootToBios" children="Controls">
             <Property name="BackColor">1, 92, 163</Property>
             <Property name="ForeColor">White</Property>
             <Property name="Location">401, 12</Property>
+            <Property name="Name">buttonBootToBios</Property>
+            <Property name="Size">123, 30</Property>
+            <Property name="TabIndex">8</Property>
+            <Property name="Text">Boot to BIOS</Property>
+            <Property name="UseVisualStyleBackColor">False</Property>
+            <Event name="Click">buttonBootToBios_Click</Event>
+            <Event name="MouseHover">buttonBootToBios_MouseHover</Event>
+          </Object>
+          <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonPowerState" children="Controls">
+            <Property name="BackColor">1, 92, 163</Property>
+            <Property name="ForeColor">White</Property>
+            <Property name="Location">14, 12</Property>
             <Property name="Name">buttonPowerState</Property>
             <Property name="Size">123, 30</Property>
             <Property name="TabIndex">7</Property>
@@ -340,7 +393,6 @@
             <Event name="Click">buttonPowerState_Click</Event>
           </Object>
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonBrowse" children="Controls">
-            <Property name="Anchor">Top, Right</Property>
             <Property name="BackColor">1, 92, 163</Property>
             <Property name="ForeColor">White</Property>
             <Property name="Location">835, 46</Property>
@@ -352,7 +404,6 @@
             <Event name="Click">buttonBrowse_Click</Event>
           </Object>
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonBootFromISO" children="Controls">
-            <Property name="Anchor">Top, Right</Property>
             <Property name="BackColor">1, 92, 163</Property>
             <Property name="ForeColor">White</Property>
             <Property name="Location">660, 12</Property>
@@ -362,9 +413,9 @@
             <Property name="Text">Boot from ISO</Property>
             <Property name="UseVisualStyleBackColor">False</Property>
             <Event name="Click">buttonBootFromISO_Click</Event>
+            <Event name="MouseHover">buttonBootFromISO_MouseHover</Event>
           </Object>
           <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="textboxISO" children="Controls">
-            <Property name="Anchor">Top, Right</Property>
             <Property name="AutoCompleteMode">SuggestAppend</Property>
             <Property name="AutoCompleteSource">FileSystem</Property>
             <Property name="BackColor">White</Property>
@@ -388,7 +439,7 @@
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonPowerOn" children="Controls">
             <Property name="BackColor">1, 92, 163</Property>
             <Property name="ForeColor">White</Property>
-            <Property name="Location">143, 12</Property>
+            <Property name="Location">14, 45</Property>
             <Property name="Name">buttonPowerOn</Property>
             <Property name="Size">123, 30</Property>
             <Property name="TabIndex">3</Property>
@@ -397,7 +448,7 @@
             <Event name="Click">buttonPowerOn_Click</Event>
           </Object>
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonOSRestart" children="Controls">
-            <Property name="Location">143, 48</Property>
+            <Property name="Location">272, 46</Property>
             <Property name="Name">buttonOSRestart</Property>
             <Property name="Size">123, 30</Property>
             <Property name="TabIndex">2</Property>
@@ -406,7 +457,7 @@
             <Event name="Click">buttonOSRestart_Click</Event>
           </Object>
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonOSShutdown" children="Controls">
-            <Property name="Location">14, 48</Property>
+            <Property name="Location">143, 45</Property>
             <Property name="Name">buttonOSShutdown</Property>
             <Property name="Size">123, 30</Property>
             <Property name="TabIndex">1</Property>
@@ -417,7 +468,7 @@
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="ButtonPowerOff" children="Controls">
             <Property name="BackColor">1, 92, 163</Property>
             <Property name="ForeColor">White</Property>
-            <Property name="Location">14, 12</Property>
+            <Property name="Location">143, 12</Property>
             <Property name="Name">ButtonPowerOff</Property>
             <Property name="Size">123, 30</Property>
             <Property name="TabIndex">0</Property>
@@ -507,10 +558,34 @@
           <Property name="TabIndex">6</Property>
           <Property name="Text">Remote</Property>
           <Property name="UseVisualStyleBackColor">True</Property>
+          <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonBrowseVNC" children="Controls">
+            <Property name="Location">837, 51</Property>
+            <Property name="Name">buttonBrowseVNC</Property>
+            <Property name="Size">30, 23</Property>
+            <Property name="TabIndex">1</Property>
+            <Property name="Text">...</Property>
+            <Property name="UseVisualStyleBackColor">True</Property>
+            <Event name="Click">buttonBrowseVNC_Click</Event>
+          </Object>
+          <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="labelVNCViewerPlusPath" children="Controls">
+            <Property name="Location">437, 19</Property>
+            <Property name="Name">labelVNCViewerPlusPath</Property>
+            <Property name="Size">194, 19</Property>
+            <Property name="TabIndex">9</Property>
+            <Property name="Text">VNC Viewer Plus path:</Property>
+          </Object>
+          <Object type="System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="VNCTextBox" children="Controls">
+            <Property name="AutoCompleteMode">SuggestAppend</Property>
+            <Property name="AutoCompleteSource">FileSystem</Property>
+            <Property name="Location">437, 50</Property>
+            <Property name="Name">VNCTextBox</Property>
+            <Property name="Size">394, 27</Property>
+            <Property name="TabIndex">0</Property>
+          </Object>
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonKVM" children="Controls">
             <Property name="BackColor">1, 92, 163</Property>
             <Property name="ForeColor">White</Property>
-            <Property name="Location">155, 13</Property>
+            <Property name="Location">296, 49</Property>
             <Property name="Name">buttonKVM</Property>
             <Property name="Size">135, 30</Property>
             <Property name="TabIndex">7</Property>
@@ -519,7 +594,7 @@
             <Event name="Click">buttonKVM_Click</Event>
           </Object>
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonGPOUpdate" children="Controls">
-            <Property name="Location">155, 49</Property>
+            <Property name="Location">155, 13</Property>
             <Property name="Name">buttonGPOUpdate</Property>
             <Property name="Size">135, 30</Property>
             <Property name="TabIndex">6</Property>
@@ -528,7 +603,7 @@
             <Event name="Click">buttonGPOUpdate_Click</Event>
           </Object>
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonOpenDDrive" children="Controls">
-            <Property name="Location">296, 49</Property>
+            <Property name="Location">296, 13</Property>
             <Property name="Name">buttonOpenDDrive</Property>
             <Property name="Size">135, 30</Property>
             <Property name="TabIndex">5</Property>
@@ -537,7 +612,7 @@
             <Event name="Click">buttonOpenDDrive_Click</Event>
           </Object>
           <Object type="System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="buttonOpenCDrive" children="Controls">
-            <Property name="Location">296, 13</Property>
+            <Property name="Location">155, 49</Property>
             <Property name="Name">buttonOpenCDrive</Property>
             <Property name="Size">135, 30</Property>
             <Property name="TabIndex">4</Property>
@@ -756,21 +831,31 @@ UnConfigure</Property>
     <Property name="Filter">Text File (.txt)|*.txt|All Files|*.*</Property>
     <Property name="ShowHelp">True</Property>
   </Object>
-  <Object type="System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="openfiledialog1">
+  <Object type="System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="openfiledialogISO">
     <Property name="DefaultExt">txt</Property>
-    <Property name="Filter">Text File (.txt)|*.txt|All Files|*.*</Property>
+    <Property name="Filter">Disc Image (.iso)|*.iso|All Files|*.*</Property>
     <Property name="ShowHelp">True</Property>
   </Object>
-  <Object type="System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="openfiledialog2">
+  <Object type="System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="openfiledialogXML">
     <Property name="DefaultExt">txt</Property>
-    <Property name="Filter">Text File (.txt)|*.txt|All Files|*.*</Property>
+    <Property name="Filter">XML File (.xml)|*.xml|All Files|*.*</Property>
     <Property name="ShowHelp">True</Property>
-    <Event name="FileOk">openfiledialog2_FileOk</Event>
+    <Event name="FileOk">openfiledialogXML_FileOk</Event>
   </Object>
-  <Object type="System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="timer1" />
-  <Code><![CDATA[
-Import-Module BitsTransfer
+  <Object type="System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="openfiledialogVNC">
+    <Property name="DefaultExt">txt</Property>
+    <Property name="Filter">Executable File (.exe)|*.exe|All Files|*.*</Property>
+    <Property name="ShowHelp">True</Property>
+    <Event name="FileOk">openfiledialogVNC_FileOk</Event>
+  </Object>
+  <Object type="System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="tooltip" />
+  <Code><![CDATA[Import-Module BitsTransfer
 $BoxManual.Text = Hostname
+if (Test-Path .\VNCPath.txt)
+{
+$VNCTextBox.Text = Get-Content .\VNCPath.txt	
+}
+else {$VNCTextBox.Text = "C:\Program Files (x86)\RealVNC\VNCViewerPlus\vncviewerplus.exe"}
 
 #region Add-Results
 
@@ -800,8 +885,6 @@ $OnLoadFormEvent={
 #TODO: Initialize Form Controls here
 
 }
-
-
 
 
 
@@ -920,9 +1003,7 @@ $buttonOkFile_Click={
 	foreach ($Computer in $Target)
 	{
 		$boxSelection.Text += $Computer+"`r`n"
-	}
-	
-	
+	}	
 }
 
 $buttonOkManual_Click={
@@ -932,29 +1013,12 @@ $buttonOkManual_Click={
 
 }
 
-$boxFile_TextChanged={
-	#TODO: Place custom script here
-	
-}
-
-$boxSelection_TextChanged={
-	#TODO: Place custom script here
-	
-}
-
-$ActionGroupBox_Enter={
-	#TODO: Place custom script here
-	
-}
-
-$labelResults_Click={
-	#TODO: Place custom script here
-	
-}
-
-$tabpage1_Click={
-	#TODO: Place custom script here
-	
+$BoxManual_KeyDown=[System.Windows.Forms.KeyEventHandler]{
+	if ($_.KeyCode -eq 13)
+	{
+		$Target = $BoxManual.Text
+		$boxSelection.Text = $Target
+	}
 }
 
 $ButtonPowerOff_Click={
@@ -1329,21 +1393,11 @@ $buttonHardwareReset_Click={
 	$MainForm.Cursor = "Default"	
 }
 
-$buttonBootFromISO_Click={
-	$MainForm.Cursor = "WaitCursor"
-	$ISOFile = $textboxISO.Text
-	foreach ($Computer in $TargetGroupBox)
-	{
-	Invoke-AMTForceBoot $Computer -Operation:Reset -Device:IDER -IDERPath:$ISOFile
-	}
-	$MainForm.Cursor = "Default"
-}
-
 $buttonBrowse_Click={
 
-	if($openfiledialog1.ShowDialog() -eq 'OK')
+	if($openfiledialogISO.ShowDialog() -eq 'OK')
 	{
-		$textboxISO.Text = $openfiledialog1.FileName
+		$textboxISO.Text = $openfiledialogISO.FileName
 	}
 }
 
@@ -1368,19 +1422,19 @@ $buttonKVM_Click={
 	{
 	Add-Logs "VNC session started to $Computer"
 	Add-Results "VNC session started to $Computer"
-	$Command = "C:\Program Files (x86)\RealVNC\VNCViewerPlus\vncviewerplus.exe"
+	$Command = $VNCTextBox.Text
 	Start-Process $Command $Computer
 	}
 	$MainForm.Cursor = "Default"
 }
 
 $buttonBrowse2_Click={
-	$openfiledialog2.DefaultExt = "xml"
-	$openfiledialog2.Filter = "XML File (.xml)|*.xml|All Files|*.*"
+	$openfiledialogXML.DefaultExt = "xml"
+	$openfiledialogXML.Filter = "XML File (.xml)|*.xml|All Files|*.*"
 
-	if($openfiledialog2.ShowDialog() -eq 'OK')
+	if($openfiledialogXML.ShowDialog() -eq 'OK')
 	{
-		$textboxFile.Text = $openfiledialog2.FileName
+		$textboxFile.Text = $openfiledialogXML.FileName
 	}
 }
 
@@ -1412,7 +1466,7 @@ $buttonvProConfigure_Click={
 	$MainForm.Cursor = "Default"
 }
 
-$openfiledialog2_FileOk=[System.ComponentModel.CancelEventHandler]{
+$openfiledialogXML_FileOk=[System.ComponentModel.CancelEventHandler]{
 #Event Argument: $_ = [System.ComponentModel.CancelEventArgs]
 	#TODO: Place custom script here
 	
@@ -1490,7 +1544,7 @@ $buttonHardwareAssets_Click={
 	$MainForm.Cursor = "WaitCursor"
 	foreach ($Computer in $Target)
 	{
-		$result = Get-AMTHardwareAsset $Computer -credential $VProCredential -textoutput
+		$result = Get-AMTHardwareAsset $Computer -credential $VProCredential -textoutput | Out-String
 		if ($result.Contains("Unauthorized") -eq $true)
 		{
 			Add-Results "$Computer`tHardwareAssets-Unauthorized"
@@ -1547,12 +1601,148 @@ $About_Click={
 
 $Help_Click={
 	Start-Process "http://www.tulpep.com/Solutions/vTul"
+<<<<<<< HEAD
 }]]></Code>
   <Bookmarks />
   <BreakPoints>
     <Line Disabled="False">320</Line>
   </BreakPoints>
   <TracePoints />
+=======
+}
+
+
+$buttonBrowseVNC_Click={
+
+	if($openfiledialogVNC.ShowDialog() -eq 'OK')
+	{
+		$VNCTextBox.Text = $openfiledialogVNC.FileName
+		$VNCTextBox.Text | Out-File VNCPath.txt
+	}
+}
+
+$openfiledialogVNC_FileOk=[System.ComponentModel.CancelEventHandler]{
+#Event Argument: $_ = [System.ComponentModel.CancelEventArgs]
+	#TODO: Place custom script here
+	
+}
+
+
+$buttonBootToBios_Click={
+	$MainForm.Cursor = "WaitCursor"
+	foreach ($Computer in $Target)
+	{
+		$result = Invoke-AMTForceboot -computername $Computer -Operation PowerOn -Credential $vProCredential -device BIOSSetup
+			if ($result.Status -eq "Successful")
+		{
+			Add-Results "$Computer`tBootToBios-Success"
+		}
+		elseif ($result.Status -eq "Unauthorized")
+		{
+			Add-Results "$Computer`tBootToBios-Unauthorized"
+		}
+		else {Add-Results "$Computer`tBootToBios-CannotConnect"}
+	}
+	$MainForm.Cursor = "Default"	
+	
+}
+
+
+$buttonBootToBios_MouseHover={
+	$tooltip.SetToolTip($buttonBootToBios, "Requires a KVM session in progress")
+}
+
+$buttonBootToPXE_Click={
+	$MainForm.Cursor = "WaitCursor"
+	foreach ($Computer in $Target)
+	{
+		$result = Invoke-AMTForceboot -computername $Computer -Operation PowerOn -Credential $vProCredential -device PXE
+			if ($result.Status -eq "Successful")
+		{
+			Add-Results "$Computer`tBootToPXE-Success"
+		}
+		elseif ($result.Status -eq "Unauthorized")
+		{
+			Add-Results "$Computer`tBootToPXE-Unauthorized"
+		}
+		else {Add-Results "$Computer`tBootToPXE-CannotConnect"}
+	}
+	$MainForm.Cursor = "Default"	
+}
+
+$buttonBootToPXE_MouseHover={
+	$tooltip.SetToolTip($buttonBootToPXE, "Requires a KVM session in progress")	
+}
+
+$buttonBootToHD_Click={
+	$MainForm.Cursor = "WaitCursor"
+	foreach ($Computer in $Target)
+	{
+		$result = Invoke-AMTForceboot -computername $Computer -Operation PowerOn -Credential $vProCredential -device HardDrive
+			if ($result.Status -eq "Successful")
+		{
+			Add-Results "$Computer`tBootToHD-Success"
+		}
+		elseif ($result.Status -eq "Unauthorized")
+		{
+			Add-Results "$Computer`tBootToHD-Unauthorized"
+		}
+		else {Add-Results "$Computer`tBootToHD-CannotConnect"}
+	}
+	$MainForm.Cursor = "Default"	
+}
+
+$buttonBootToHD_MouseHover={
+	$tooltip.SetToolTip($buttonBootToHD, "Requires a KVM session in progress")	
+}
+
+$buttonBootCDDVD_Click={	
+	$MainForm.Cursor = "WaitCursor"
+	foreach ($Computer in $Target)
+	{
+		$result = Invoke-AMTForceboot -computername $Computer -Operation PowerOn -Credential $vProCredential -device Optical
+			if ($result.Status -eq "Successful")
+		{
+			Add-Results "$Computer`tBootToCDDVD-Success"
+		}
+		elseif ($result.Status -eq "Unauthorized")
+		{
+			Add-Results "$Computer`tBootToCDDVD-Unauthorized"
+		}
+		else {Add-Results "$Computer`tBootToCDDVD-CannotConnect"}
+	}
+	$MainForm.Cursor = "Default"	
+}
+
+$buttonBootCDDVD_MouseHover={
+	$tooltip.SetToolTip($buttonBootCDDVD, "Requires a KVM session in progress")		
+}
+
+$buttonBootFromISO_MouseHover={
+	$tooltip.SetToolTip($buttonBootFromISO, "Requires a KVM session in progress. Select the ISO Path in the field below")		
+	
+}
+
+$buttonBootFromISO_Click={
+	$MainForm.Cursor = "WaitCursor"
+	foreach ($Computer in $Target)
+	{
+		$result = Invoke-AMTForceboot -computername $Computer -Operation PowerOn -Credential $vProCredential -device IDER -IDERpath $textboxISO.Text
+			if ($result.Status -eq "Successful")
+		{
+			Add-Results "$Computer`tBootToISO-Success"
+		}
+		elseif ($result.Status -eq "Unauthorized")
+		{
+			Add-Results "$Computer`tBootToISO-Unauthorized"
+		}
+		else {Add-Results "$Computer`tBootToISO-CannotConnect"}
+	}
+	$MainForm.Cursor = "Default"	
+	
+}
+]]></Code>
+>>>>>>> improvement
   <Mode>1</Mode>
   <Assemblies>
     <Assembly>System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll</Assembly>

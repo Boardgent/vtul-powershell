@@ -729,7 +729,7 @@ function GenerateFormAD {
 	$Target = @()
 	foreach ($Computer in $TargetFullAd)
 	{
-		$Target += $Computer.Name
+		$Target += $Computer.DNSHostName
 	}
 	return $Target
 } #Endregion GenerateFormAD
