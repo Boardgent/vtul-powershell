@@ -13,7 +13,7 @@ ModuleToProcess = 'IntelvProModule.dll'
 
 
 # Version number of this module.
-ModuleVersion = '3.2.1'
+ModuleVersion = '3.2.2'
 
 # ID used to uniquely identify this module
 GUID = 'd73751bb-1090-4e5d-b22c-7d8e27e0a174'
@@ -25,7 +25,7 @@ Author = 'Intel'
 CompanyName = 'Intel Corporation'
 
 # Copyright statement for this module
-Copyright = '2011 Intel Corporation'
+Copyright = '2012 Intel Corporation'
 
 # Description of the functionality provided by this module
 Description = 'Support for configuring and using Intel(r) vPro(tm) Processor Technology '
